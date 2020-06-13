@@ -1,0 +1,34 @@
+@import "variables";
+.subscribe{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background: $white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    box-shadow: 0px 3px 6px $shadow;
+    input,button{
+        height: 100%;
+        background: transparent;
+        user-select: none;
+        outline: 0;
+        border: none;
+    }
+    button{
+        border-radius: 0 30px 30px 0;
+        background:  transparent linear-gradient(270deg, $light-blue 0%, $dark-blue 100%);
+        font-size: 0.78rem;
+        color:$white;
+        font-family: $montserrat-medium;
+    }
+    input{
+        padding: 0 40px;
+        border-radius: 30px 0 0 30px;
+        color: $title-dark;
+        &::placeholder{
+            color: $title-dark;
+        }
+    }
+
+}

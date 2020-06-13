@@ -1,0 +1,87 @@
+.card {
+  height: 250px;
+  -webkit-box-shadow: 0px 3px 13px #00000029;
+          box-shadow: 0px 3px 13px #00000029;
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .icon {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 16.5px;
+  background: #28C2FF;
+  top: -22.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card .icon::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #274DAD;
+}
+
+.card .icon::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  border-radius: 50%;
+  bottom: 8%;
+  right: -1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #A4E5FF;
+}
+
+.card .card-inner {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.card .card-inner h4, .card .card-inner p {
+  text-align: center;
+  color: #707070;
+  font-size: 1em;
+}
+
+.card .card-inner p {
+  font-weight: 500;
+}
+
+.card .card-inner h4 {
+  margin-bottom: 20px;
+  font-family: "Montserrat-Bold";
+  font-size: 1.1em;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .card {
+    height: 210px;
+  }
+  .card .card-inner h4 {
+    padding-top: 37px;
+  }
+  .card .card-inner p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}

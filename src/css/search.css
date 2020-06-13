@@ -1,0 +1,23 @@
+#search {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85% 15%;
+      grid-template-columns: 85% 15%;
+}
+
+#search input, #search button {
+  background: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+}
+
+#search input {
+  padding: 0 0 0 20px;
+}

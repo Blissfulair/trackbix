@@ -1,0 +1,133 @@
+@import "variables";
+.pricing{
+    height: 94vh;
+    width: 100%;
+    &::after{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        clip-path: polygon( 35% 0%, 100% 0, 100% 75%, 60% 94%, 15% 65%);
+        background: transparent linear-gradient(204deg, $blue-border 0%, $light-blue 100%);
+        content: "";
+        z-index: -1;
+    }
+    position: relative;
+    .pricing-inner{
+        width: 67%;
+        margin: 0 auto;
+        padding-top: 150px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 5%;
+        align-items: center;
+        z-index: 10;
+        .col{
+            height: 400px;
+            width: 100%;
+            background: $white;
+            box-shadow: 14px 2px 26px $shadow;
+            display: grid;
+            justify-content: center;
+            &:first-child{
+                h5{
+                    color: #E6744B;
+                }
+                .badge{
+                    background: #FF6537 ;
+                }
+                a{
+                    border-color:  #F26D41;
+                    color: #E6744B;
+                }
+            }
+    
+            &:nth-child(2){
+                h5{
+                    color: #2A558C;
+                }
+                .badge{
+                    background: #2A558C;
+                }
+                a{
+                    background: transparent linear-gradient(90deg, #274DAD 0%, #28C2FF 100%);
+                    color: $white;
+                    border-width: 0px;
+                }
+            }
+            &:last-child{
+                h5{
+                    color: #00DA7A;
+                }
+                .badge{
+                    background: #00D873;
+                }
+                a{
+                    border-color: #00DA7A;
+                    color:#00DA7A;
+                }
+            }
+            h5{
+                margin-top: 20px;
+                text-align: center;
+                font-family: $montserrat-bold;  
+                font-size: 1.3rem;
+            }
+            p{
+                margin-top: -30px;
+                text-align: center;
+                sup{
+                    font-family: $black;
+                    font-family: 0.6rem;
+                    color: $dark-text;  
+                }
+                span{
+                    color: $dark-text;
+                    font-family: $montserrat-bold;
+                    font-size: 1.6rem;
+                }
+                sub{
+                    font-family: $semiBold;
+                    font-size: 0.6rem;
+                    color:$dark-text;
+                }
+            }
+            .badge{
+                margin-top: -40px;
+                align-items: center;
+                justify-self: center;
+                padding: 2px 18px;
+                height: 25px;
+                border-radius: 25px;
+                small{
+                    color:$white;
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                }
+            }
+            ul{
+                li{
+                    list-style: disc;
+                    font-family: $montserrat-bold;
+                    font-size: 0.76rem;
+                    margin: 10px 0;
+                    color: $title-dark;
+                }
+            }
+            a{
+                text-align: center;
+                border-style: solid;
+                border-width: 1.3px;
+                padding: 5px 20px;
+                height: 22px;
+                border-radius: 22px;    
+                font-family: $semiBold;
+                font-size: 0.7rem;
+                display: flex;
+                justify-self: center;
+                align-items: center
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "variables";
+.apple-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: $title-dark;
+        font-family: $montserrat-medium;
+        font-size: 15px;
+    }
+    img{
+        width: 18px;
+        margin-right: 6px;
+    }
+}

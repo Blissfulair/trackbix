@@ -1,0 +1,48 @@
+$montserrat-bold: 'Montserrat-Bold';
+$montserrat-medium: 'Montserrat-Medium';
+$montserrat:'Montserrat';
+$semiBold:'Montserrat-SemiBold';
+$black:'Montserrat-Black';
+$italic:'Montserrat-Italic';
+$boli:'Boli';
+$yellow : #ECC308;
+$white:#fff;
+$blue:#133260;
+$shadow:#00000029;
+$blue-border:#274DAD;
+$light-blue:#28C2FF;
+$dark-blue:#142757;
+$title-blue: #1C4569;
+$off-white:#F9F9F9;
+$light-text:#707070;
+$dark-text:#2F353A;
+$icon-blue:#A4E5FF;
+$footer-blue:#8FB7C1;
+$title-dark: #160C28;
+$help-bg:#28C2FF24;
+$title-border:#C2C0C0;
+$tab-title:#F2F2F2;
+
+%section-title {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    font-family: $montserrat-bold;
+    font-size: 30px;
+    color: $title-blue;
+}
+%slant-heading{
+    font-family: $montserrat-bold;
+    font-size: 1.2rem;
+    color: $light-text;
+}
+%slant-paragraph{
+    width: 70%;
+    margin-top: 10px;
+    font-family: $montserrat-medium;
+    font-size: 0.86rem;
+    color: $light-text;
+}
+%transition3{
+    transition: all 0.3s linear;
+}

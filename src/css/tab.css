@@ -1,0 +1,47 @@
+.tab {
+  width: 100%;
+  height: auto;
+  margin: 17px 0;
+  cursor: pointer;
+}
+
+.tab .tab-title {
+  height: 40px;
+  width: 100%;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  cursor: pointer;
+}
+
+.tab .tab-title h5, .tab .tab-title h3, .tab .tab-title h2, .tab .tab-title h1, .tab .tab-title h4, .tab .tab-title div, .tab .tab-title span, .tab .tab-title small {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Montserrat-Medium";
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #160C28;
+  cursor: pointer;
+}
+
+.tab .tab-body {
+  background: #fff;
+  padding: 35px 40px 60px;
+  display: none;
+}
+
+.tab .tab-body p, .tab .tab-body h1, .tab .tab-body h2, .tab .tab-body h3, .tab .tab-body h4, .tab .tab-body h5, .tab .tab-body h6, .tab .tab-body div, .tab .tab-body span, .tab .tab-body td, .tab .tab-body small {
+  font-family: "Montserrat-Medium";
+  font-size: 0.7rem;
+  color: #707070;
+}
+
+.open .tab-body {
+  display: block;
+}

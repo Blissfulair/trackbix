@@ -1,0 +1,57 @@
+.subscribe {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  background: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.subscribe input, .subscribe button {
+  height: 100%;
+  background: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: 0;
+  border: none;
+}
+
+.subscribe button {
+  border-radius: 0 30px 30px 0;
+  background: transparent -webkit-gradient(linear, right top, left top, from(#28C2FF), to(#142757));
+  background: transparent linear-gradient(270deg, #28C2FF 0%, #142757 100%);
+  font-size: 0.78rem;
+  color: #fff;
+  font-family: "Montserrat-Medium";
+}
+
+.subscribe input {
+  padding: 0 40px;
+  border-radius: 30px 0 0 30px;
+  color: #160C28;
+}
+
+.subscribe input::-webkit-input-placeholder {
+  color: #160C28;
+}
+
+.subscribe input:-ms-input-placeholder {
+  color: #160C28;
+}
+
+.subscribe input::-ms-input-placeholder {
+  color: #160C28;
+}
+
+.subscribe input::placeholder {
+  color: #160C28;
+}

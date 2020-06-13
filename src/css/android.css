@@ -1,0 +1,50 @@
+.android {
+  background: #160C28;
+  width: 100%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+}
+
+.android .android-inner {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  grid-auto-columns: 8fr 4fr;
+}
+
+.android .android-inner p {
+  color: #fff;
+  display: block;
+}
+
+.android .android-inner p:first-child {
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+}
+
+.android .android-inner p:last-child {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+}
+
+.android .android-inner img {
+  width: 25px;
+  height: auto;
+}

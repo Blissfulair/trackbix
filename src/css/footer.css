@@ -1,0 +1,78 @@
+footer {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+footer::after {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #8FB7C1;
+  -webkit-clip-path: polygon(0 37.5%, 1.5625% 34.2%, 3.125% 31.2%, 6.25% 25.9%, 12.5% 17.1%, 25% 7.7%, 37.5% 1.5%, 50% 0.1%, 62.5% 1.5%, 75% 7.7%, 87.5% 17.1%, 93.75% 25.9%, 96.875% 31.2%, 98.4375% 34.2%, 100% 37.5%, 100% 100%, 0 100%);
+          clip-path: polygon(0 37.5%, 1.5625% 34.2%, 3.125% 31.2%, 6.25% 25.9%, 12.5% 17.1%, 25% 7.7%, 37.5% 1.5%, 50% 0.1%, 62.5% 1.5%, 75% 7.7%, 87.5% 17.1%, 93.75% 25.9%, 96.875% 31.2%, 98.4375% 34.2%, 100% 37.5%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(-1% 37.5%, 1.5625% 34.2%, 3.125% 32.2%, 6.25% 27.9%, 12.5% 21.1%, 25% 10.7%, 37.5% 2.5%, 50% -1%, 62.5% 2.5%, 75% 10.7%, 87.5% 21.1%, 93.75% 27.9%, 96.875% 32.2%, 98.4375% 34.2%, 101% 37.5%, 100% 100%, 0 100%);
+          clip-path: polygon(-1% 37.5%, 1.5625% 34.2%, 3.125% 32.2%, 6.25% 27.9%, 12.5% 21.1%, 25% 10.7%, 37.5% 2.5%, 50% -1%, 62.5% 2.5%, 75% 10.7%, 87.5% 21.1%, 93.75% 27.9%, 96.875% 32.2%, 98.4375% 34.2%, 101% 37.5%, 100% 100%, 0 100%);
+}
+
+footer .footer-inner {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23% 13% 13% 13% 30%;
+      grid-template-columns: 23% 13% 13% 13% 30%;
+  grid-column-gap: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-inner .footer-col li {
+  margin: 4px 0;
+}
+
+footer .footer-inner .footer-col li a {
+  font-family: "Montserrat-Medium";
+  font-size: 0.78rem;
+  color: #160C28;
+}
+
+footer .footer-inner .footer-col:last-child .sub h5 {
+  margin-bottom: 10px;
+  font-family: "Montserrat-Bold";
+  font-size: 0.89rem;
+  color: #160C28;
+}
+
+footer .footer-inner .footer-col:first-child h4 {
+  font-family: "Montserrat-Bold";
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+footer .footer-inner .footer-col:first-child p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #160C28;
+  font-size: 0.78rem;
+}
+
+footer .footer-inner .footer-col:first-child .social-media {
+  height: 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 15% 15%;
+      grid-template-columns: 15% 15% 15%;
+  grid-column-gap: 7%;
+  margin: 10px 0;
+}
+
+footer .footer-inner .footer-col:first-child .social-media span {
+  background: #fff;
+}
