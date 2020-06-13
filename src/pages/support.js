@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import "./../css/support.css"
-import play from  "./../images/playstore.svg"
+import card from  "./../images/card.svg"
 import Search from "../component/search";
 import Topics from "../component/topics";
 import JoinUs from "../component/joinus";
@@ -35,7 +35,7 @@ const Support =()=>{
                                 return(
                                     <Topics
                                     key={i}
-                                    icon={play}
+                                    icon={topic.icon}
                                     topic={topic.topic}
                                     excerpt={topic.excerpt}
                                     />

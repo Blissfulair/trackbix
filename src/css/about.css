@@ -1,3 +1,12 @@
+.team h3, .team h5 {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 50px;
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
+  color: #1C4569;
+}
+
 .about-us {
   width: 100%;
   height: 100vh;
@@ -31,6 +40,75 @@
   margin: 35px 0;
 }
 
+.about-us .about-us-inner .about-text p {
+  font-family: "Montserrat-Italic";
+  font-size: 0.9rem;
+  color: #707070;
+  margin: 28px 0 15px;
+  width: 84%;
+}
+
+.about-us .about-us-inner .about-text h4 {
+  font-family: "Montserrat-Bold";
+  color: #707070;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.about-us .about-us-inner .about-text .seeus {
+  margin-left: 90px;
+}
+
+.about-us .about-us-inner .about-text .seeus small {
+  font-family: "Montserrat";
+  color: #707070;
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-us .about-us-inner .about-text .seeus .arrows {
+  display: -ms-grid;
+  display: grid;
+  width: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: -3px;
+}
+
+.about-us .about-us-inner .about-text .seeus .arrows span {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-width: 3px;
+  border-style: solid;
+  border-color: #EBEBEB;
+  display: block;
+  border-top: none;
+  border-left: none;
+}
+
+.about-us .about-us-inner .about-text .seeus .arrows span:first-child {
+  margin-top: -10px;
+}
+
+.about-us .about-us-inner .about-text .seeus .arrows span:nth-child(2) {
+  margin-top: -20px;
+  border-color: #D9D9D9;
+}
+
+.about-us .about-us-inner .about-text .seeus .arrows span:last-child {
+  width: 50px;
+  height: 50px;
+  margin-top: -30px;
+  border-color: #BEBDBD;
+}
+
 .about-us .about-us-inner .about-us-content {
   display: -ms-grid;
   display: grid;
@@ -41,6 +119,86 @@
 .about-us .about-us-inner .about-us-content .image {
   width: 100%;
   min-height: 300px;
-  background: #F9F9F9;
   background: url(../images/about.png) no-repeat center center/cover;
+  position: relative;
+}
+
+.about-us .about-us-inner .about-us-content .image::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #F9F9F9;
+  z-index: -1;
+}
+
+.about-us .about-us-inner .about-us-content .image span {
+  height: 60px;
+  width: 100px;
+  border-radius: 60px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: black;
+  display: block;
+  position: absolute;
+}
+
+.about-us .about-us-inner .about-us-content .image span:first-child {
+  width: 116px;
+  height: 37px;
+  top: 15%;
+  left: 16%;
+}
+
+.about-us .about-us-inner .about-us-content .image span:nth-child(2) {
+  width: 230px;
+  height: 65px;
+  top: 28%;
+  left: 9%;
+}
+
+.about-us .about-us-inner .about-us-content .image span:nth-child(3) {
+  width: 167px;
+  height: 62px;
+  top: 46%;
+  left: 35%;
+}
+
+.about-us .about-us-inner .about-us-content .image span:nth-child(4) {
+  width: 114px;
+  height: 37px;
+  top: 64%;
+  left: 56%;
+}
+
+.team {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.team h3, .team h5 {
+  color: #160C28;
+  margin-bottom: 20px;
+}
+
+.team h5 {
+  font-size: 0.9rem;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+
+.team .team-gallery {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (33.33% [col-start])[3];
+      grid-template-columns: repeat(3, 33.33% [col-start]);
+  margin-bottom: 200px;
+  -webkit-box-shadow: 0px 0px 25px #00000029;
+          box-shadow: 0px 0px 25px #00000029;
+  background: #fff;
 }

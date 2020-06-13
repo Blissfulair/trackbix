@@ -7,6 +7,7 @@ const Home =()=>{
         if(document.querySelector('.pricing') === null){
             const brand = document.querySelector('.brand');
             brand.classList.remove('brown')
+            brand.classList.remove('blue')
             brand.classList.add('default')
         }
     })

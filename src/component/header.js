@@ -21,6 +21,7 @@ const Header = ({title})=>{
                 if(!isInViewport(home)){
                     const brand = document.querySelector('.brand');
                     brand.classList.remove('brown')
+                    brand.classList.remove('blue')
                     brand.classList.add('default')
                     document.querySelector('.header').style.background = 'transparent linear-gradient(5deg, #28C2FF 0%, #142757 100%)';
                 }
@@ -29,7 +30,14 @@ const Header = ({title})=>{
                  if(document.querySelector('.pricing') !== null){
                     const brand = document.querySelector('.brand');
                     brand.classList.remove('default')
+                    brand.classList.remove('blue')
                     brand.classList.add('brown')
+                }
+                else if(document.querySelector('.about-us') !== null){
+                    const brand = document.querySelector('.brand');
+                    brand.classList.remove('brown')
+                    brand.classList.remove('default')
+                    brand.classList.add('blue')
                 }
                 }
             }

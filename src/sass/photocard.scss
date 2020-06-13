@@ -1,0 +1,69 @@
+@import "variables";
+.photo-card{
+    width:100%;
+    height:220px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    &:first-child{
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #274DAD 0%, #3454A6DA 40%, #80808000 100%);
+        }
+    }
+    &:nth-child(2){
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #ECC308 0%, #ECC308C2 47%, #80808000 100%) 
+        }
+    }
+    &:nth-child(3){
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #B3001B 0%, #B3001BA8 47%, #80808000 100%)
+        }
+    }
+    &:nth-child(4){
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #28C2FF 0%, #80808000 100%)  
+        }
+    }
+    &:nth-child(5){
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #160C28 0%, #80808000 100%)
+        }
+    }
+    &:nth-child(6){
+        .photo-inner{
+            background: transparent linear-gradient(0deg, #B3001B 0%, #80808000 100%)
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+
+    }
+    .photo-inner{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        min-height: 70px;
+        display: grid;
+        align-content: center;
+        width: 100%;
+        h4,p{
+            color: $white;
+            margin-left: 20px;
+        }
+        h4{
+            font-family: $montserrat-bold;
+            font-size: 0.9rem;
+        }
+        p{
+            font-family: $montserrat;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+}

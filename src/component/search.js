@@ -4,7 +4,7 @@ const Search =()=>{
     return(
         <form id="search">
             <input type="text"  />
-            <button>q</button>
+            <button className="icon-search"></button>
         </form>
     )
 }

@@ -14,4 +14,13 @@
     input{
         padding: 0 0 0 20px;
     }
+    button{
+        font-size: 20px;
+        cursor: pointer;
+        &:hover{
+            button::before{
+                opacity: 0.5;
+            }
+        }
+    }
 }

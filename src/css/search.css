@@ -21,3 +21,12 @@
 #search input {
   padding: 0 0 0 20px;
 }
+
+#search button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#search button:hover button::before {
+  opacity: 0.5;
+}

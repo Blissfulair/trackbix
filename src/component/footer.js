@@ -11,9 +11,9 @@ const Footer =()=>{
                     <h4>Trackbiz</h4>
                     <p>Your business within your control</p>
                     <div className="social-media">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span className="icon-facebook"></span>
+                        <span className="icon-instagram"></span>
+                        <span className="icon-facebook"></span>
                     </div>
                     <p>All rights reserved &copy; TrackBiz {new Date().getFullYear()}</p>
                 </div>

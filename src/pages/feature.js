@@ -1,11 +1,14 @@
 import React, { useEffect } from "react"
 import {Link} from "react-router-dom";
 import "./../css/pricing.css";
+import { isInViewport } from "../helper/helper";
 const Feature =()=>{
     useEffect(()=>{
-        if(document.querySelector('.pricing') !== null){
+        const pricing = document.querySelector('.pricing');
+        if(pricing !== null && isInViewport(pricing)){
             const brand = document.querySelector('.brand');
             brand.classList.remove('default')
+            brand.classList.remove('blue')
             brand.classList.add('brown')
         }
     })

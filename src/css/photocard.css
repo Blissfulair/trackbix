@@ -1,0 +1,76 @@
+.photo-card {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.photo-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 2;
+}
+
+.photo-card:first-child .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#274DAD), color-stop(40%, #3454A6DA), to(#80808000));
+  background: transparent linear-gradient(0deg, #274DAD 0%, #3454A6DA 40%, #80808000 100%);
+}
+
+.photo-card:nth-child(2) .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#ECC308), color-stop(47%, #ECC308C2), to(#80808000));
+  background: transparent linear-gradient(0deg, #ECC308 0%, #ECC308C2 47%, #80808000 100%);
+}
+
+.photo-card:nth-child(3) .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#B3001B), color-stop(47%, #B3001BA8), to(#80808000));
+  background: transparent linear-gradient(0deg, #B3001B 0%, #B3001BA8 47%, #80808000 100%);
+}
+
+.photo-card:nth-child(4) .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#28C2FF), to(#80808000));
+  background: transparent linear-gradient(0deg, #28C2FF 0%, #80808000 100%);
+}
+
+.photo-card:nth-child(5) .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#160C28), to(#80808000));
+  background: transparent linear-gradient(0deg, #160C28 0%, #80808000 100%);
+}
+
+.photo-card:nth-child(6) .photo-inner {
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#B3001B), to(#80808000));
+  background: transparent linear-gradient(0deg, #B3001B 0%, #80808000 100%);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.photo-card .photo-inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-height: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
+.photo-card .photo-inner h4, .photo-card .photo-inner p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.photo-card .photo-inner h4 {
+  font-family: "Montserrat-Bold";
+  font-size: 0.9rem;
+}
+
+.photo-card .photo-inner p {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  font-weight: 600;
+}

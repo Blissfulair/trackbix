@@ -4,7 +4,7 @@ const Topics =({icon,topic, excerpt})=>{
     return(
         <div className="topic">
             <div className="topic-box">
-                <img src={icon} alt={topic} />
+                <span className={icon}></span>
                 <h5>{topic}</h5>
             </div>
             <p>{excerpt}</p>
