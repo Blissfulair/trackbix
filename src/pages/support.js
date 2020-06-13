@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React, { Component } from "react"
 import "./../css/support.css"
-import card from  "./../images/card.svg"
 import Search from "../component/search";
 import Topics from "../component/topics";
 import JoinUs from "../component/joinus";
@@ -8,14 +7,28 @@ import {Link} from "react-router-dom"
 import {topics} from "./../data/topics.js";
 import {faqs} from "./../data/faq.js"
 import Tab from "../component/tab";
-const Support =()=>{
-    useEffect(()=>{
+class Support extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            search:'',
+            FAQ:faqs
+        }
+    }
+    componentDidMount(){
         if(document.querySelector('.pricing') === null){
             const brand = document.querySelector('.brand');
             brand.classList.remove('brown')
             brand.classList.add('default')
         }
-    })
+    }
+    onSearch = (e)=>{
+        const value = e.target.value;
+        const faq = faqs.filter(data=>data.title.toLowerCase().includes(value.toLowerCase()));
+        this.setState({FAQ:faq})
+    }
+render(){
+    const {FAQ} =this.state
     return(
         <>
             <div className="support-search">
@@ -23,7 +36,7 @@ const Support =()=>{
                     <h4>Support Centre</h4>
                     <h5>Hey there, how can we help you?</h5>
                     <p>Search a related problem, lets find the best help</p>
-                    <Search/>
+                    <Search onSearch={this.onSearch}/>
                 </div>
             </div>
             <div className="help-topics">
@@ -50,9 +63,9 @@ const Support =()=>{
                     <h3>Frequently asked Questions</h3>
                     <div className="answers">
                         {
-                            faqs.map((faq,i)=>{
+                          FAQ.length > 0? FAQ.map((faq,i)=>{
                                 return(
-                                    <Tab key={i} toggle={i===0?true:false}> 
+                                    <Tab key={i} open={i===0?true:false}> 
                                         <div className="tab-title">
                                             <h5>{faq.title}</h5>
                                         </div>
@@ -61,7 +74,10 @@ const Support =()=>{
                                         </div>
                                     </Tab>
                                 )
-                            })
+                            }):
+                            (
+                                <p>No Record matches your search</p>
+                            )
                         }
                     </div>
                     <div className="get-join">
@@ -74,5 +90,6 @@ const Support =()=>{
             </div>
         </>
     )
+    }
 }
 export default Support

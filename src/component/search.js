@@ -1,11 +1,11 @@
 import React from "react"
 import "./../css/search.css"
-const Search =()=>{
+const Search =({onSearch})=>{
     return(
-        <form id="search">
-            <input type="text"  />
-            <button className="icon-search"></button>
-        </form>
+        <div id="search">
+            <input name="search" onChange={e=>onSearch(e)} type="text"  />
+            <button type="button" className="icon-search"></button>
+        </div>
     )
 }
 export default Search

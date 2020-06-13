@@ -65,6 +65,7 @@
                         display: block;
                         border-top: none;
                         border-left: none;
+                        @extend %transition3;
                         &:first-child{
                             margin-top: -10px;
                         }
@@ -76,7 +77,8 @@
                             width: 50px;
                             height: 50px;
                             margin-top: -30px;
-                            border-color: #BEBDBD
+                            border-color: #BEBDBD;
+                            animation: arrows 0.9s linear infinite;
                         }
                     }
                 }
@@ -162,5 +164,30 @@
         margin-bottom: 200px;
         box-shadow: 0px 0px 25px $shadow;
         background: $white;
+    }
+}
+@media(max-width:767px){
+    .about-us{
+        height: auto;
+        .about-us-inner{
+            .about-us-content{
+                display: block;
+            }
+            .about-text{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    .seeus{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    .team{
+        width: 80%;
+        .team-gallery{
+            grid-template-columns: repeat(2, 50% [col-start]);
+        }
     }
 }

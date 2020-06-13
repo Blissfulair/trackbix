@@ -34,16 +34,20 @@ export const closeMobileMenu =(isOpen)=>{
 export const openTab = (e)=>{
     if(e.target.parentElement.className === 'tab-title'){
         const open = e.target.parentElement.parentElement.classList[1];
-        console.log(open)
         const tab =  e.target.parentElement.parentElement.querySelector('.tab-body');
-        if(open === 'open')
+        let display = 'none';
+        if(open === 'open' && display === 'none')
         {
-            tab.style.display = "none";
+            console.log(open)
+            tab.style.display = display;
             e.target.parentElement.parentElement.classList.remove('open')
             e.target.parentElement.parentElement.classList.add('close');
+            display = 'block'
         }
-        else if(open === 'close'){
+        else if(open ==='close' && display === 'none'){
+            console.log('close')
             tab.style.display = "block";
+            e.target.parentElement.parentElement.classList.remove('close');
             e.target.parentElement.parentElement.classList.add('open')
         }
     }

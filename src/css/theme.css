@@ -28,8 +28,34 @@
   }
 }
 
-.dot {
-  height: 10px;
-  background: #274DAD;
-  z-index: 2;
+.theme-mode {
+  width: 44px;
+  height: 22px;
+  border-radius: 44px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.theme-mode .theme-button {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #133260;
+  -webkit-box-shadow: 0px 0px 8px #00000029;
+          box-shadow: 0px 0px 8px #00000029;
+  border: 1px solid #274DAD;
+}
+
+@media (max-width: 767px) {
+  .theme-mode {
+    cursor: default;
+  }
 }

@@ -1,6 +1,6 @@
 @import "variables";
 .pricing{
-    height: 94vh;
+    min-height: 94vh;
     width: 100%;
     &::after{
         height: 100%;
@@ -49,6 +49,7 @@
                 }
                 .badge{
                     background: #2A558C;
+                    margin-top: -35px;
                 }
                 a{
                     background: transparent linear-gradient(90deg, #274DAD 0%, #28C2FF 100%);
@@ -62,6 +63,7 @@
                 }
                 .badge{
                     background: #00D873;
+                    margin-top: -23px;
                 }
                 a{
                     border-color: #00DA7A;
@@ -104,6 +106,7 @@
                     color:$white;
                     font-weight: 700;
                     font-size: 0.8rem;
+                    vertical-align: bottom;
                 }
             }
             ul{
@@ -127,6 +130,29 @@
                 display: flex;
                 justify-self: center;
                 align-items: center
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .pricing{
+        .pricing-inner{
+            display: block;
+            margin-bottom: 40px;
+            .col{
+                margin-bottom: 30px;
+                height: 350px;
+                .badge{
+                    margin-top: -10px !important;
+                }
+                &:last-child{
+                    h5{
+                        margin-bottom: 15px;
+                    }
+                    .badge{
+                        margin-top: -3px !important;
+                    }
+                }
             }
         }
     }

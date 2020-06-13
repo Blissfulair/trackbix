@@ -7,6 +7,36 @@
   color: #1C4569;
 }
 
+@-webkit-keyframes arrows {
+  0% {
+    -webkit-transform: translateY(-3px) rotate(45deg);
+            transform: translateY(-3px) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+}
+
+@keyframes arrows {
+  0% {
+    -webkit-transform: translateY(-3px) rotate(45deg);
+            transform: translateY(-3px) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+}
+
 .support-search {
   width: 100%;
   height: 64vh;
@@ -110,4 +140,20 @@
   font-family: "Montserrat-Medium";
   color: #160C28;
   font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .support-search .support-top {
+    width: 90%;
+  }
+  .help-topics .help-inner {
+    width: 80%;
+  }
+  .help-topics .help-inner .topics {
+    -ms-grid-columns: (47.5% [col-start])[2];
+        grid-template-columns: repeat(2, 47.5% [col-start]);
+  }
+  .faq .faq-inner {
+    width: 80%;
+  }
 }

@@ -82,3 +82,23 @@
         }
     }
 }
+@media(max-width:767px){
+    .support-search{
+        .support-top{
+            width: 90%;
+        }
+    }
+    .help-topics{
+        .help-inner{
+            width: 80%;
+            .topics{
+                grid-template-columns: repeat(2, 47.5% [col-start]);
+            }
+        }
+    }
+    .faq{
+        .faq-inner{
+            width: 80%;
+        }
+    }
+}

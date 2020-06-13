@@ -36,7 +36,7 @@
 body{
   font-size: 16px;
   font-family: "Montserrat";
-  background: #F9F9F9;
+  background: var(--background);
 }
 .App{
   position: relative;

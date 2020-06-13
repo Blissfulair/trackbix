@@ -47,3 +47,14 @@ $about-title:#174F7F;
 %transition3{
     transition: all 0.3s linear;
 }
+@keyframes arrows{
+    0%{
+        transform: translateY(-3px) rotate(45deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(45deg);
+    }
+    100%{
+        transform: translateY(3px) rotate(45deg);
+    }
+}

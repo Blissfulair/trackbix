@@ -40,40 +40,31 @@ header{
     }
     .hambuger{
         display: none;
+        .inner{
+            @extend %transition3;
+            span{
+                @extend %transition3
+            }
+        }
     }
-    .menu .menu-items{
-        display: flex;
-        justify-content: space-between;
-        font-family: $montserrat-medium;
-        font-size: 13px;
-        font-weight: 100;
-        align-items: center;
-        .menu-item{
-            color: $white;
-            a{
-                color: $white;  
-            }
-            &:nth-child(5){
-                background-color: $yellow;
-                padding: 7px 17px;
-                border-radius: 20px;
-            }
-            &:last-child{
-                .theme-mode{
-                    width: 44px;
-                    height: 22px;
-                    border-radius: 44px;
-                    background: $white;
-                    display: flex;
-                    align-items: center;
-                    .theme-button{
-                        height: 18px;
-                        width: 18px;
-                        border-radius: 50%;
-                        background: $blue;
-                        box-shadow: 0px 0px 8px $shadow;
-                        border: 1px solid $blue-border;
-                    }
+    .menu{
+        @extend %transition3;
+        .menu-items{
+            display: flex;
+            justify-content: space-between;
+            font-family: $montserrat-medium;
+            font-size: 13px;
+            font-weight: 100;
+            align-items: center;
+            .menu-item{
+                color: $white;
+                a{
+                    color: $white;  
+                }
+                &:nth-child(5){
+                    background-color: $yellow;
+                    padding: 7px 17px;
+                    border-radius: 20px;
                 }
             }
         }
@@ -97,7 +88,6 @@ header{
             visibility: hidden;
             background: black;
             box-shadow: 0px 3px 13px $shadow;
-            // @extend %transition3;
             .menu-items{
                 display: grid;
                 justify-content: center;

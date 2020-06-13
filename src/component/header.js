@@ -2,7 +2,9 @@ import React, { useEffect } from "react"
 import {Link } from "react-router-dom";
 import "./../css/header.css"
 import { isInViewport, openMobileMenu, closeMobileMenu } from "../helper/helper";
+import Theme from "./theme";
 const Header = ({title})=>{
+    
     useEffect(()=>{
         let isOpen = false
         window.onscroll = (e)=>{
@@ -65,9 +67,7 @@ const Header = ({title})=>{
                         <li className="menu-item"><Link to="support">Support</Link></li>
                         <li className="menu-item">Try for free</li>
                         <li className="menu-item">
-                            <div className="theme-mode">
-                                <div className="theme-button"></div>
-                            </div>
+                            <Theme/>
                         </li>
                     </ul>
                 </div>

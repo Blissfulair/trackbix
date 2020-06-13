@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import {Link} from "react-router-dom";
 import "./../css/pricing.css";
 import { isInViewport } from "../helper/helper";
+import {packages} from "./../data/topics.js"
 const Feature =()=>{
     useEffect(()=>{
         const pricing = document.querySelector('.pricing');
@@ -16,61 +17,31 @@ const Feature =()=>{
         <>
         <div className="pricing">
             <div className="pricing-inner">
-                <div className="col">
-                    <h5>Basic</h5>
-                    <p>
-                        <sup>$</sup>
-                        <span>30</span>
-                        <sub>/ month</sub>
-                    </p>
-                    <div className="badge">
-                        <small>1 user</small>
-                    </div>
-                    <ul>
-                        <li>Access on all devices</li>
-                        <li>One-to-one sharing</li>
-                        <li>Password generator</li>
-                    </ul>
-                    <Link to="/">Subscribe</Link>
-                </div>
-                <div className="col">
-                    <h5>Premium</h5>
-                    <p>
-                        <sup>$</sup>
-                        <span>50</span>
-                        <sub>/ month</sub>
-                    </p>
-                    <div className="badge">
-                        <small>3 user</small>
-                    </div>
-                    <ul>
-                        <li>Access on all devices</li>
-                        <li>One-to-one sharing</li>
-                        <li>Password generator</li>
-                        <li>Secure notes</li>
-                    </ul>
-                    <Link to="/">Subscribe</Link>
-                </div>
-                <div className="col">
-                    <h5>Pro</h5>
-                    <p>
-                        <sup>$</sup>
-                        <span>100</span>
-                        <sub>/ month</sub>
-                    </p>
-                    <div className="badge">
-                        <small>5 user</small>
-                    </div>
-                    <ul>
-                        <li>Access on all devices</li>
-                        <li>One-to-one sharing</li>
-                        <li>Password generator</li>
-                        <li>Secure notes</li>
-                        <li>Security challenge</li>
-                        <li>Multi-factor authentification</li>
-                    </ul>
-                    <Link to="/">Subscribe</Link>
-                </div>
+                {
+                    packages.map((pack,i)=>{
+                        return (
+                            <div key={i} className="col">
+                            <h5>{pack.package}</h5>
+                            <p>
+                                <sup>$</sup>
+                                <span>{pack.price}</span>
+                                <sub>/ month</sub>
+                            </p>
+                            <div className="badge">
+                                <small>{pack.user > 1? `${pack.user} users`: `${pack.user} user`}</small>
+                            </div>
+                            <ul>
+                                {
+                                    pack.content.map((content,j)=>{
+                                        return <li key={j}>{content.list}</li>
+                                    })
+                                }
+                            </ul>
+                            <Link to="/">Subscribe</Link>
+                        </div>
+                        )
+                    })
+                }
             </div>
         </div>
         </>
