@@ -65,6 +65,7 @@ const About =()=>{
                 </div>
                 <div className="col">
                     <div>
+                        <div className="ribbon"></div>
                         <h5>Calendar</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 

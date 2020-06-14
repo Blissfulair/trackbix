@@ -178,6 +178,16 @@
 
 .about .content-slant .col:last-child div {
   width: 80%;
+  position: relative;
+}
+
+.about .content-slant .col:last-child div .ribbon {
+  height: 65px;
+  width: 210px;
+  position: absolute;
+  top: -50px;
+  left: 70px;
+  background: url(../images/rebon.svg) no-repeat center center/contain;
 }
 
 .about .slant-2 {

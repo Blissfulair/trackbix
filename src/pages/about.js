@@ -39,6 +39,7 @@ const About = ()=>{
                                     </div>
                                 </div>
                             </a>
+                            <div className="icons"></div>
                         </div>
                     </div>
                 </div>

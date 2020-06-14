@@ -4,15 +4,14 @@
     height: 100vh;
     position: relative;
     &::after{
-        width: 100%;
-        height: 100%;
+        width: 75%;
+        height: 62%;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         content: "";
         z-index: -1;
-        background: transparent linear-gradient(15deg, $light-blue 0%, $dark-blue 100%);
-        clip-path:polygon(30% 0, 100% 0%, 100% 52%, 99% 53%, 97% 54%, 96% 54%, 94% 53%, 92% 51%, 88% 44%, 86% 39%, 83% 32%, 82% 30%, 79% 26%, 76% 24%, 74% 23%, 71% 22%, 64% 21%, 62% 20%, 61% 19%, 59.7% 18%, 57% 17%, 54% 18%, 48% 18%, 52% 18%, 50% 17%, 44% 12%, 44% 12%, 42% 10%, 40% 9%, 38% 8%, 36% 7%, 42% 10%, 35% 5%, 37% 7%, 36% 6%, 32% 3%, 38% 7%, 25% 0%, 29% 0%)
+        background:  url(../images/aboutcurve.svg) no-repeat center bottom/cover;
     }
     .about-us-inner{
         padding-top: 150px;
@@ -26,6 +25,7 @@
             margin: 35px 0;
         }
         .about-text{
+            position: relative;
             p{
                 font-family: $italic;
                 font-size: 0.9rem;
@@ -38,6 +38,14 @@
                 color: $light-text;
                 font-size: 1.8rem;
                 margin-bottom: 30px;
+            }
+            .icons{
+                width:160px;
+                height: 160px;
+                position: absolute;
+                right: -8%;
+                bottom: -46px;
+                background: url(../images/about.svg) no-repeat center left/cover;
             }
             .seeus{
                 margin-left: 90px;
@@ -164,6 +172,15 @@
         margin-bottom: 200px;
         box-shadow: 0px 0px 25px $shadow;
         background: $white;
+    }
+}
+@media(max-width:1025px){
+    .about-us{
+        &::after{
+            z-index: -1;
+            background: transparent linear-gradient(15deg, $light-blue 0%, $dark-blue 100%);
+            clip-path:polygon(30% 0, 100% 0%, 100% 52%, 99% 53%, 97% 54%, 96% 54%, 94% 53%, 92% 51%, 88% 44%, 86% 39%, 83% 32%, 82% 30%, 79% 26%, 76% 24%, 74% 23%, 71% 22%, 64% 21%, 62% 20%, 61% 19%, 59.7% 18%, 57% 17%, 54% 18%, 48% 18%, 52% 18%, 50% 17%, 44% 12%, 44% 12%, 42% 10%, 40% 9%, 38% 8%, 36% 7%, 42% 10%, 35% 5%, 37% 7%, 36% 6%, 32% 3%, 38% 7%, 25% 0%, 29% 0%);
+        }
     }
 }
 @media(max-width:767px){

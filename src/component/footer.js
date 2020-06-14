@@ -6,6 +6,9 @@ import Subscribe from "./subscribe";
 const Footer =()=>{
     return(
         <footer>
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1920 310">
+            <path id="FooterImg" d="M0-4.023S479.431-89.677,959.431-89.677,1920-4.023,1920-4.023V251H0Z" transform="translate(0 89.677)" />
+            </svg>
             <div className="footer-inner">
                 <div className="footer-col">
                     <h4>Trackbiz</h4>
