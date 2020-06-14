@@ -5,7 +5,7 @@
         margin-bottom: 20px;
         font-family: $montserrat-bold;
         font-size: 1.1rem;
-        color: $title-dark;
+        color: $join-us;
         &::after{
             position: absolute;
             bottom: -9px;
@@ -14,7 +14,7 @@
             width: 50px;
             left: 0;
             height: 5px;
-            background: $white;
+            background: $footer-line;
         }
     }
 }

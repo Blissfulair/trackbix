@@ -49,7 +49,7 @@ const Header = ({title})=>{
            if(!isOpen){
                isOpen = openMobileMenu(e,isOpen)
            }else{
-                isOpen = closeMobileMenu(isOpen)
+                isOpen = closeMobileMenu(e,isOpen)
            }
        })
     })

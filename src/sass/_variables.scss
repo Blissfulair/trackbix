@@ -9,20 +9,33 @@ $yellow : #ECC308;
 $white:#fff;
 $blue:#133260;
 $shadow:#00000029;
+$phone-shadow:var(--shadow);
 $blue-border:#274DAD;
 $light-blue:#28C2FF;
 $dark-blue:#142757;
 $title-blue: #1C4569;
 $off-white:#F9F9F9;
-$light-text:#707070;
+$light-text:var(--light-text);
+$card-text:#707070;
 $dark-text:#2F353A;
 $icon-blue:#A4E5FF;
-$footer-blue:#8FB7C1;
+$footer-blue:var(--footer-bg);
 $title-dark: #160C28;
+$join-us: var(--join-us);
 $help-bg:#28C2FF24;
+$help-text:var(--help-text);
+$client-title:var(--client-title);
 $title-border:#C2C0C0;
-$tab-title:#F2F2F2;
-$about-title:#174F7F;
+$tab-title:var(--tab-title);
+$tab-body:var(--tab-body);
+$about-title:var(--about-title);
+$link:var(--link);
+$dot:var(--dot);
+$card:var(--card);
+$see:var(--see);
+$footer-line:var(--footer-line);
+$theme:var(--theme);
+$knob:var(--knob);
 
 %section-title {
     text-align: center;
@@ -30,7 +43,7 @@ $about-title:#174F7F;
     margin-bottom: 50px;
     font-family: $montserrat-bold;
     font-size: 30px;
-    color: $title-blue;
+    color: var(--title);
 }
 %slant-heading{
     font-family: $montserrat-bold;

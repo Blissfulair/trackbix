@@ -12,7 +12,7 @@ class Support extends Component{
         super(props)
         this.state={
             search:'',
-            FAQ:faqs
+            FAQ:[]
         }
     }
     componentDidMount(){
@@ -21,6 +21,10 @@ class Support extends Component{
             brand.classList.remove('brown')
             brand.classList.add('default')
         }
+        this.setState({FAQ:faqs})
+    }
+    componentWillUnmount(){
+        this.setState({FAQ:[]})
     }
     onSearch = (e)=>{
         const value = e.target.value;
@@ -65,7 +69,7 @@ render(){
                         {
                           FAQ.length > 0? FAQ.map((faq,i)=>{
                                 return(
-                                    <Tab key={i} open={i===0?true:false}> 
+                                    <Tab key={i}  show={i===0?true:false}> 
                                         <div className="tab-title">
                                             <h5>{faq.title}</h5>
                                         </div>

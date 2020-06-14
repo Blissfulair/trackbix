@@ -4,7 +4,7 @@
   margin-bottom: 50px;
   font-family: "Montserrat-Bold";
   font-size: 30px;
-  color: #1C4569;
+  color: var(--title);
 }
 
 @-webkit-keyframes arrows {
@@ -83,7 +83,7 @@
   font-family: "Montserrat-Bold";
   font-size: 1.178rem;
   padding-bottom: 12px;
-  color: #160C28;
+  color: var(--client-title);
   border-bottom: 1px solid #C2C0C0;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .faq .faq-inner h3 {
-  color: #160C28;
+  color: var(--join-us);
 }
 
 .faq .faq-inner .get-join {

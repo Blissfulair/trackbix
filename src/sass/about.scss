@@ -43,7 +43,7 @@
                 margin-left: 90px;
                 small{
                     font-family: $montserrat;
-                    color: $light-text;
+                    color: $see;
                     font-size: 0.96rem; 
                     font-weight: 600;
                     text-align: center;
@@ -148,7 +148,7 @@
     margin-top: 40px;
     h3,h5{
         @extend %section-title;
-        color: $title-dark;
+        color: $join-us;
         margin-bottom: 20px;
     }
     h5{

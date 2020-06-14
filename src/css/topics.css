@@ -39,8 +39,8 @@
 
 .topic .topic-box {
   height: 150px;
-  width: 150px;
-  background: #fff;
+  min-width: 150px;
+  background: var(--card);
   border: 2px solid #28C2FF;
   display: -ms-grid;
   display: grid;
@@ -55,18 +55,19 @@
 
 .topic .topic-box span {
   font-size: 45px;
+  color: var(--client-title);
 }
 
 .topic .topic-box h5 {
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 1rem;
-  color: #160C28;
+  color: var(--client-title);
 }
 
 .topic p {
   text-align: center;
-  color: #AFAFAF;
+  color: var(--help-text);
   font-family: "Montserrat-Medium";
   font-size: 0.8rem;
   margin-top: 15px;

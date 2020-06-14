@@ -4,13 +4,13 @@
   margin-bottom: 50px;
   font-family: "Montserrat-Bold";
   font-size: 30px;
-  color: #1C4569;
+  color: var(--title);
 }
 
 .about .how-it-works .content .cal-text h5, .about .content-slant .col:last-child div h5, .about .slant-2 .col:first-child div h5 {
   font-family: "Montserrat-Bold";
   font-size: 1.2rem;
-  color: #707070;
+  color: var(--light-text);
 }
 
 .about .how-it-works .content .cal-text p, .about .content-slant .col:last-child div p, .about .slant-2 .col:first-child div p {
@@ -18,7 +18,7 @@
   margin-top: 10px;
   font-family: "Montserrat-Medium";
   font-size: 0.86rem;
-  color: #707070;
+  color: var(--light-text);
 }
 
 @-webkit-keyframes arrows {
@@ -97,8 +97,8 @@
   height: 335px;
   -webkit-transform: rotate(18deg);
           transform: rotate(18deg);
-  -webkit-box-shadow: 31px 8px 23px #00000029;
-          box-shadow: 31px 8px 23px #00000029;
+  -webkit-box-shadow: 31px 8px 23px var(--shadow);
+          box-shadow: 31px 8px 23px var(--shadow);
 }
 
 .about .how-it-works .content .hor-grid {
@@ -134,7 +134,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: #EFFAFF;
+  background: var(--calendar-slide);
   -webkit-clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 77%);
           clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 77%);
 }
@@ -163,8 +163,8 @@
   margin-top: -118px;
   margin-left: 18px;
   height: 450px;
-  -webkit-box-shadow: 31px 8px 23px #00000029;
-          box-shadow: 31px 8px 23px #00000029;
+  -webkit-box-shadow: 31px 8px 23px var(--shadow);
+          box-shadow: 31px 8px 23px var(--shadow);
 }
 
 .about .content-slant .col:last-child {
@@ -200,6 +200,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 20%;
+}
+
+.about .slant-2 .col:first-child div p a {
+  color: var(--link);
 }
 
 .about .slant-2 .col:last-child {
@@ -247,7 +251,7 @@
   content: "";
   -webkit-clip-path: polygon(0 0, 100% 26%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 26%, 100% 100%, 0% 100%);
-  background: #fff;
+  background: var(--client);
 }
 
 .about .slant-3 .slant-3-inner {
@@ -268,16 +272,16 @@
 }
 
 .about .slant-3 .slant-3-inner .dot-right .dot, .about .slant-3 .slant-3-inner .dot-left .dot {
-  background: #A8C1E3;
+  background: var(--dot);
 }
 
 .about .slant-3 .slant-3-inner .dot-right {
-  right: 8%;
-  top: 35%;
+  right: 11%;
+  top: 30%;
 }
 
 .about .slant-3 .slant-3-inner .dot-right .dot {
-  background: #A8C1E3;
+  background: var(--dot);
   opacity: 0.3;
 }
 
@@ -288,10 +292,10 @@
 .about .slant-3 .slant-3-inner h3 {
   text-align: center;
   padding-top: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
   font-family: "Montserrat-Bold";
   font-size: 30px;
-  color: #160C28;
+  color: var(--client-title);
 }
 
 .about .slant-3 .slant-3-inner .item-image {
@@ -305,7 +309,7 @@
   font-size: 30px;
   text-align: center;
   font-family: "Montserrat-Italic";
-  color: #707070;
+  color: var(--light-text);
   position: relative;
 }
 
@@ -313,7 +317,7 @@
   font-size: 100px;
   font-family: "Boli";
   position: absolute;
-  color: #160C28;
+  color: var(--join-us);
 }
 
 .about .slant-3 .slant-3-inner .item-content p span#left-q {
@@ -327,7 +331,7 @@
 
 .about .slant-3 .slant-3-inner .item-content small {
   font-size: 18px;
-  color: #707070;
+  color: var(--light-text);
   display: block;
   font-family: "Montserrat-Medium";
 }

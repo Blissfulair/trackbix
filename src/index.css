@@ -1,5 +1,24 @@
 body {
   --background:#F9F9F9;
+  --calendar-slide:#EFFAFF;
+  --client:#ffffff;
+  --title:#1C4569;
+  --client-title:#160C28;
+  --join-us:#160C28;
+  --light-text:#707070;
+  --link:#286DA0;
+  --dot:#A8C1E3;
+  --card:#ffffff;
+  --help-text:#AFAFAF;
+  --tab-title:#F2F2F2;
+  --tab-body:#FFFFFF;
+  --about-title:#174F7F;
+  --see:#707070;
+  --shadow:#5a6e9c2e;
+  --footer-line:#28C2FF;
+  --footer-bg:#8FB7C1;
+  --theme:#274DAD;
+  --knob:#133260;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

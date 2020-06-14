@@ -79,11 +79,11 @@ header .default h5 {
 }
 
 header .blue h5 {
-  color: #174F7F;
+  color: var(--about-title);
 }
 
 header .brown h5 {
-  color: #707070;
+  color: var(--light-text);
 }
 
 header .hambuger {

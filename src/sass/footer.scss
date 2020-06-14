@@ -29,7 +29,7 @@ footer{
                 a{
                     font-family: $montserrat-medium;
                     font-size: 0.78rem;
-                    color:$title-dark;
+                    color:$join-us;
                 }
             }
             &:last-child{
@@ -38,7 +38,7 @@ footer{
                         margin-bottom: 10px;
                         font-family: $montserrat-bold;
                         font-size: 0.89rem;
-                        color:$title-dark;
+                        color:$join-us;
                     }
                 }
             }
@@ -50,8 +50,8 @@ footer{
                 }
                 p{
                     font-family: $montserrat;
-                    font-weight: 700;
-                    color: $title-dark;
+                    font-weight: 500;
+                    color: $join-us;
                     font-size: 0.78rem;
                 }
                 .social-media{
@@ -65,6 +65,7 @@ footer{
                         justify-content: center;
                         display: flex;
                         align-items: center;
+                        color:$join-us;
                     }
                 }
             }

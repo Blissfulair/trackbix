@@ -36,7 +36,7 @@
             font-family: $montserrat-bold;
             font-size: 1.178rem;
             padding-bottom: 12px;
-            color: $title-dark;
+            color: $client-title;
             border-bottom: 1px solid $title-border;
         }
         .topics{
@@ -57,7 +57,7 @@
         margin: 0 auto;
         h3{
             @extend %section-title;
-            color: $title-dark;
+            color: $join-us;
         }
         .get-join{
             margin-top: 100px;

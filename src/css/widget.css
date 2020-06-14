@@ -33,7 +33,7 @@
   margin-bottom: 20px;
   font-family: "Montserrat-Bold";
   font-size: 1.1rem;
-  color: #160C28;
+  color: var(--join-us);
 }
 
 .widget h4::after {
@@ -44,5 +44,5 @@
   width: 50px;
   left: 0;
   height: 5px;
-  background: #fff;
+  background: var(--footer-line);
 }

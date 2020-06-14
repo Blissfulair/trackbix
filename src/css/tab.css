@@ -33,12 +33,35 @@
   height: auto;
   margin: 17px 0;
   cursor: pointer;
+  position: relative;
+}
+
+.tab .toggle {
+  display: block;
+  height: 6px;
+  width: 6px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: 3px solid var(--join-us);
+}
+
+.tab .up {
+  border-bottom: none;
+  border-right: none;
+}
+
+.tab .down {
+  border-top: none;
+  border-left: none;
 }
 
 .tab .tab-title {
   height: 40px;
   width: 100%;
-  background: #F2F2F2;
+  background: var(--tab-title);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,12 +79,12 @@
   font-family: "Montserrat-Medium";
   font-size: 0.88rem;
   font-weight: 500;
-  color: #160C28;
+  color: var(--join-us);
   cursor: pointer;
 }
 
 .tab .tab-body {
-  background: #fff;
+  background: var(--tab-body);
   padding: 35px 40px 60px;
   display: none;
 }
@@ -69,9 +92,21 @@
 .tab .tab-body p, .tab .tab-body h1, .tab .tab-body h2, .tab .tab-body h3, .tab .tab-body h4, .tab .tab-body h5, .tab .tab-body h6, .tab .tab-body div, .tab .tab-body span, .tab .tab-body td, .tab .tab-body small {
   font-family: "Montserrat-Medium";
   font-size: 0.7rem;
-  color: #707070;
+  color: var(--light-text);
 }
 
 .open .tab-body {
   display: block;
+}
+
+@media (max-width: 900px) {
+  .tab {
+    cursor: default;
+  }
+  .tab .tab-title {
+    cursor: default;
+  }
+  .tab .tab-title h5, .tab .tab-title h3, .tab .tab-title h2, .tab .tab-title h1, .tab .tab-title h4, .tab .tab-title div, .tab .tab-title span, .tab .tab-title small {
+    cursor: default;
+  }
 }

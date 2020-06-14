@@ -41,7 +41,7 @@
                         width: 170px;
                         height: 335px;
                         transform: rotate(18deg);
-                        box-shadow: 31px 8px 23px $shadow;
+                        box-shadow: 31px 8px 23px $phone-shadow;
                     }
                 }
             }
@@ -73,7 +73,7 @@
             z-index: -1;
             width: 100%;
             height: 100%;
-            background: #EFFAFF;
+            background: var(--calendar-slide);
             clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 77%);
         }
         .col{
@@ -91,7 +91,7 @@
                         margin-top: -118px;
                         margin-left: 18px;
                         height: 450px;
-                        box-shadow: 31px 8px 23px $shadow;
+                        box-shadow: 31px 8px 23px $phone-shadow;
                     }
                 }
             }
@@ -128,6 +128,9 @@
                     }
                     p{
                         @extend %slant-paragraph;
+                        a{
+                            color: $link;
+                        }
                     }
                 }
             }
@@ -167,7 +170,7 @@
             left: 0;
             content: "";
             clip-path: polygon(0 0, 100% 26%, 100% 100%, 0% 100%);
-            background: $white;
+            background: var(--client);
             // z-index: -1;
         }
         .slant-3-inner{
@@ -182,14 +185,14 @@
                 grid-row-gap: 15px;
                 position: absolute;
                 .dot{
-                    background: #A8C1E3
+                    background: $dot
                 }
             }
             .dot-right{
-                right: 8%;
-                top: 35%;
+                right: 11%;
+                top: 30%;
                 .dot{
-                    background: #A8C1E3;
+                    background: $dot;
                     opacity: 0.3;
                 }
 
@@ -200,10 +203,10 @@
             h3{
                 text-align: center;
                 padding-top: 70px;
-                margin-bottom: 50px;
+                margin-bottom: 120px;
                 font-family: $montserrat-bold;
                 font-size: 30px;
-                color: $title-dark;
+                color: var(--client-title);
             }
             .item-image{
                 width: 130px;
@@ -222,7 +225,7 @@
                         font-size: 100px;
                         font-family: $boli;
                         position: absolute;
-                        color: $title-dark;
+                        color: $join-us;
                     }
                     span#left-q{
                         top: -41px;

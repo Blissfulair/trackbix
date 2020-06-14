@@ -42,7 +42,7 @@ footer::after {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: #8FB7C1;
+  background: var(--footer-bg);
   -webkit-clip-path: polygon(0 37.5%, 1.5625% 34.2%, 3.125% 31.2%, 6.25% 25.9%, 12.5% 17.1%, 25% 7.7%, 37.5% 1.5%, 50% 0.1%, 62.5% 1.5%, 75% 7.7%, 87.5% 17.1%, 93.75% 25.9%, 96.875% 31.2%, 98.4375% 34.2%, 100% 37.5%, 100% 100%, 0 100%);
           clip-path: polygon(0 37.5%, 1.5625% 34.2%, 3.125% 31.2%, 6.25% 25.9%, 12.5% 17.1%, 25% 7.7%, 37.5% 1.5%, 50% 0.1%, 62.5% 1.5%, 75% 7.7%, 87.5% 17.1%, 93.75% 25.9%, 96.875% 31.2%, 98.4375% 34.2%, 100% 37.5%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(-1% 37.5%, 1.5625% 34.2%, 3.125% 32.2%, 6.25% 27.9%, 12.5% 21.1%, 25% 10.7%, 37.5% 2.5%, 50% -1%, 62.5% 2.5%, 75% 10.7%, 87.5% 21.1%, 93.75% 27.9%, 96.875% 32.2%, 98.4375% 34.2%, 101% 37.5%, 100% 100%, 0 100%);
@@ -70,14 +70,14 @@ footer .footer-inner .footer-col li {
 footer .footer-inner .footer-col li a {
   font-family: "Montserrat-Medium";
   font-size: 0.78rem;
-  color: #160C28;
+  color: var(--join-us);
 }
 
 footer .footer-inner .footer-col:last-child .sub h5 {
   margin-bottom: 10px;
   font-family: "Montserrat-Bold";
   font-size: 0.89rem;
-  color: #160C28;
+  color: var(--join-us);
 }
 
 footer .footer-inner .footer-col:first-child h4 {
@@ -88,8 +88,8 @@ footer .footer-inner .footer-col:first-child h4 {
 
 footer .footer-inner .footer-col:first-child p {
   font-family: "Montserrat";
-  font-weight: 700;
-  color: #160C28;
+  font-weight: 500;
+  color: var(--join-us);
   font-size: 0.78rem;
 }
 
@@ -114,6 +114,7 @@ footer .footer-inner .footer-col:first-child .social-media span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--join-us);
 }
 
 @media (max-width: 767px) {

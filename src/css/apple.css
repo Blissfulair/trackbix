@@ -40,6 +40,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fff;
+  border-radius: 25px;
 }
 
 .apple-container p {

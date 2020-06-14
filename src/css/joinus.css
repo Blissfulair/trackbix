@@ -32,5 +32,5 @@
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 23px;
-  color: #160C28;
+  color: var(--join-us);
 }

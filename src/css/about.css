@@ -4,7 +4,7 @@
   margin-bottom: 50px;
   font-family: "Montserrat-Bold";
   font-size: 30px;
-  color: #1C4569;
+  color: var(--title);
 }
 
 .about-us .about-us-inner .about-text .seeus .arrows span {
@@ -71,21 +71,21 @@
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 1.8rem;
-  color: #174F7F;
+  color: var(--about-title);
   margin: 35px 0;
 }
 
 .about-us .about-us-inner .about-text p {
   font-family: "Montserrat-Italic";
   font-size: 0.9rem;
-  color: #707070;
+  color: var(--light-text);
   margin: 28px 0 15px;
   width: 84%;
 }
 
 .about-us .about-us-inner .about-text h4 {
   font-family: "Montserrat-Bold";
-  color: #707070;
+  color: var(--light-text);
   font-size: 1.8rem;
   margin-bottom: 30px;
 }
@@ -96,7 +96,7 @@
 
 .about-us .about-us-inner .about-text .seeus small {
   font-family: "Montserrat";
-  color: #707070;
+  color: var(--see);
   font-size: 0.96rem;
   font-weight: 600;
   text-align: center;
@@ -217,7 +217,7 @@
 }
 
 .team h3, .team h5 {
-  color: #160C28;
+  color: var(--join-us);
   margin-bottom: 20px;
 }
 

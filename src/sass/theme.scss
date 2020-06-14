@@ -3,7 +3,7 @@
     width: 44px;
     height: 22px;
     border-radius: 44px;
-    background: $white;
+    background: $theme;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -12,9 +12,10 @@
         height: 18px;
         width: 18px;
         border-radius: 50%;
-        background: $blue;
+        background: $knob;
         box-shadow: 0px 0px 8px $shadow;
         border: 1px solid $blue-border;
+        z-index: 3;
     }
 }
 @media(max-width:767px){
