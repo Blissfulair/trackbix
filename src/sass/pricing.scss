@@ -134,14 +134,27 @@
         }
     }
 }
+// @media(max-width:1024px){
+//     .pricing{
+//         height: 800px;
+//     }
+// }
 @media(max-width:767px){
     .pricing{
+        &::after{
+            height: 40%;
+        }
         .pricing-inner{
             display: block;
             margin-bottom: 40px;
             .col{
                 margin-bottom: 30px;
                 height: 350px;
+                ul{
+                    li{
+                        font-size: 0.56rem;
+                    }
+                }
                 .badge{
                     margin-top: -10px !important;
                 }

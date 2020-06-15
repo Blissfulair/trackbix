@@ -194,6 +194,9 @@
 }
 
 @media (max-width: 767px) {
+  .pricing::after {
+    height: 40%;
+  }
   .pricing .pricing-inner {
     display: block;
     margin-bottom: 40px;
@@ -201,6 +204,9 @@
   .pricing .pricing-inner .col {
     margin-bottom: 30px;
     height: 350px;
+  }
+  .pricing .pricing-inner .col ul li {
+    font-size: 0.56rem;
   }
   .pricing .pricing-inner .col .badge {
     margin-top: -10px !important;

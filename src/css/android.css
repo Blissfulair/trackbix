@@ -28,8 +28,15 @@
   }
 }
 
-.android {
+.dark {
   background: #160C28;
+}
+
+.light {
+  background: var(--android);
+}
+
+.android {
   width: 100%;
   border-radius: 25px;
   display: -webkit-box;
@@ -74,7 +81,16 @@
   font-size: 15px;
 }
 
-.android .android-inner img {
-  width: 25px;
+.android .android-inner svg {
+  width: 22px;
   height: auto;
+}
+
+@media (max-width: 360px) {
+  .android .android-inner p:first-child {
+    font-size: 0.63rem;
+  }
+  .android .android-inner p:last-child {
+    font-size: 0.78rem;
+  }
 }

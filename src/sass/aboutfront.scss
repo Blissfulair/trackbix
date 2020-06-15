@@ -107,7 +107,11 @@
                         position: absolute;
                         top: -50px;
                         left: 70px;
-                        background: url(../images/rebon.svg) no-repeat center center/contain;
+                        svg{
+                            width:100%;
+                            height:100%;
+                        }
+                        
                     }
                     h5{
                         @extend %slant-heading;
@@ -186,6 +190,7 @@
             z-index: 2;
             padding-top: 190px;
             width: 80%;
+            height: 100%;
             margin: 0 auto;
             .dot-right,.dot-left{
                 display: grid;
@@ -221,7 +226,11 @@
                 width: 130px;
                 height: 130px;
                 border-radius: 50%;
-                background: black;
+                img{
+                    max-width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
             }
             .item-content{
                 p{
@@ -230,6 +239,7 @@
                         font-family: $italic;
                         color:$light-text;
                         position: relative;
+                        padding:0 40px;
                     span{
                         font-size: 100px;
                         font-family: $boli;
@@ -238,7 +248,7 @@
                     }
                     span#left-q{
                         top: -41px;
-                        left: -28px;
+                        left: 0px;
                     
                     }
                     span#right-q{

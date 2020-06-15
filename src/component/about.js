@@ -10,6 +10,10 @@ import Carousel from "./carousel";
 import Apple from "./apple";
 import Android from "./android";
 import JoinUs from "./joinus";
+import iyobosa from "./../images/about.png"
+import slider from "./../images/slider.png"
+import slider1 from "./../images/slider1.png"
+import slider2 from "./../images/slider2.png"
 const About =()=>{
     return(
         <div className="about">
@@ -65,7 +69,14 @@ const About =()=>{
                 </div>
                 <div className="col">
                     <div>
-                        <div className="ribbon"></div>
+                        <div className="ribbon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="222.078" height="96.129" viewBox="0 0 222.078 96.129">
+                            <g id="Landing_page_section_Design" transform="translate(-1255.72 -3472.617)">
+                                <path id="Path_542" data-name="Path 542" d="M8504.708,3497.1s46.074-29.813,88.534,10.841,85.824-32.523,85.824-32.523" transform="translate(-7246)" fill="none" stroke="#28c2ff" strokeWidth="11"/>
+                                <path id="Path_543" data-name="Path 543" d="M8504.708,3497.1s46.074-29.813,88.534,10.841,85.824-32.523,85.824-32.523" transform="translate(-7206 43)" fill="none" stroke="#ecc308" strokeWidth="11"/>
+                            </g>
+                        </svg>
+                        </div>
                         <h5>Calendar</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
@@ -103,28 +114,36 @@ const About =()=>{
                     <h3>Client Review</h3>
                     <Carousel arrows auto={5000}>
                         <div className="item">
-                            <div className="item-image"></div>
+                            <div className="item-image">
+                                <img src={iyobosa} alt="" />
+                            </div>
                             <div className="item-content">
                                 <p><span id="left-q">&ldquo;</span>Spend less time worrying about your business and more time more time managing your stock.Spend less time worrying about your business and more time more time managing your stock.<span id="right-q">&rdquo;</span></p>
                                 <small>- Steve Jobs</small>
                             </div>
                         </div>
                         <div className="item">
-                            <div className="item-image"></div>
+                            <div className="item-image">
+                            <img src={slider} alt="" />
+                            </div>
                             <div className="item-content">
                                 <p><span id="left-q">&ldquo;</span>Spend less time worrying about your business and more time more time managing your stock.<span id="right-q">&rdquo;</span></p>
                                 <small>- Iyobosa</small>
                             </div>
                         </div>
                         <div className="item">
-                            <div className="item-image"></div>
+                            <div className="item-image">
+                                <img src={slider1} alt="" />
+                            </div>
                             <div className="item-content">
                                 <p><span id="left-q">&ldquo;</span>Spend less time worrying about your business and more time more time managing your stock.<span id="right-q">&rdquo;</span></p>
                                 <small>- Delight</small>
                             </div>
                         </div>
                         <div className="item">
-                            <div className="item-image"></div>
+                            <div className="item-image">
+                                <img src={slider2} alt="" />
+                            </div>
                             <div className="item-content">
                                 <p><span id="left-q">&ldquo;</span>Spend less time worrying about your business and more time more time managing your stock.<span id="right-q">&rdquo;</span></p>
                                 <small>- Godson</small>
@@ -151,7 +170,7 @@ const About =()=>{
                 <div className="join-us-inner">
                     <JoinUs/>
                     <div className="app-store">
-                        <Android/>
+                        <Android color="light" />
                         <div className="apple">
                             <Apple/>
                         </div>

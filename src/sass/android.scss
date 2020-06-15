@@ -1,6 +1,11 @@
 @import "variables";
-.android{
+.dark{
     background: $title-dark;
+}
+.light{
+    background: $android;
+}
+.android{
     width: 100%;
     border-radius: 25px;
     display: flex;
@@ -27,9 +32,24 @@
                 font-size: 15px;
             }
         }
-        img{
-            width:25px;
+        svg{
+            width:22px;
             height: auto;
+        }
+    }
+}
+
+@media(max-width:360px){
+    .android{
+        .android-inner{
+            p{
+                &:first-child{
+                    font-size: 0.63rem;
+                }
+                &:last-child{
+                    font-size:0.78rem;
+                }
+            }
         }
     }
 }

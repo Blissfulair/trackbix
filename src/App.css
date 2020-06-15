@@ -19,7 +19,7 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat-Regular.woff") format("webfont");
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Montserrat-Italic";

@@ -73,3 +73,13 @@
   margin-top: 15px;
   font-weight: 700;
 }
+
+@media (max-width: 360px) {
+  .topic .topic-box {
+    width: 100%;
+    min-width: 100%;
+  }
+  .topic p {
+    font-size: 0.7rem;
+  }
+}

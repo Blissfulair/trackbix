@@ -34,3 +34,16 @@
         font-weight: 700;
     }
 }
+@media(max-width:360px){
+    .topic{
+        .topic-box{
+            // min-width: 140px;
+            width:100%;
+            min-width: 100%;
+
+        }
+        p{
+            font-size: 0.7rem
+        }
+    }
+}

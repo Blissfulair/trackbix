@@ -26,7 +26,8 @@ class Theme extends Component{
              'footer-line':'#FFFFFF',
              'footer-bg':'#8FB7C1',
              'theme':'#FFFFFF',
-             'knob':'#133260'
+             'knob':'#133260',
+             'android':'#160C28'
             },
             dark:{
               'background':'#0B0516',
@@ -46,7 +47,8 @@ class Theme extends Component{
               'footer-line':'#28C2FF',
               'footer-bg':'#02485A',
               'theme':'#274DAD',
-              'knob':'#000000'
+              'knob':'#000000',
+              'android':'#274DAD',
             }
           }
         }

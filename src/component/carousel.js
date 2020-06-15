@@ -98,7 +98,8 @@ class Carousel extends Component{
                                 onClick={this.prevSlide} 
                                 onMouseEnter={this.onHover} 
                                 onMouseOut={()=>this.autoSlide(auto)} 
-                                className="left">      
+                                className="left">
+                                    <span className="icon-back"></span>    
                                 </div>
                                 <div className="items">{children}</div>
                                 <div 
@@ -106,6 +107,7 @@ class Carousel extends Component{
                                 onMouseEnter={this.onHover} 
                                 onMouseOut={()=>this.autoSlide(auto)} 
                                 className="right">
+                                    <span className="icon-next"></span>
                                 </div>
                             </>
                         ):''}

@@ -12,8 +12,15 @@
         font-family: $montserrat-medium;
         font-size: 15px;
     }
-    img{
+    svg{
         width: 18px;
         margin-right: 6px;
+    }
+}
+@media(max-width:360px){
+    .apple-container{
+        p{
+            font-size: 0.68rem;
+        }
     }
 }
