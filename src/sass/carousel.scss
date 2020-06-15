@@ -15,9 +15,15 @@
         justify-content: flex-end;
     }
     .icon-next,.icon-back{
-        font-size: 2rem;
+        font-size: 1.3rem;
         color: $join-us;
         cursor: pointer;
+        @extend %transition3;
+        &:hover{
+            background: green;
+            padding: 8px;
+            border-radius: 50%;
+        }
     }
     
     .items{
@@ -53,10 +59,16 @@
         // }
     }
 }
-
+@media(max-width:1024px){
+    .slant-3-slider{
+        .icon-next,.icon-back{
+            cursor: default;
+        }
+    }
+}
 @media(max-width:767px){
     .slant-3-slider{
-        height: auto;
+        height: auto;   
         .items{
             .item{
                 display: block;

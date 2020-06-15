@@ -1,3 +1,8 @@
+.slant-3-slider .icon-next, .slant-3-slider .icon-back {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
 @-webkit-keyframes arrows {
   0% {
     -webkit-transform: translateY(-3px) rotate(45deg);
@@ -62,9 +67,15 @@
 }
 
 .slant-3-slider .icon-next, .slant-3-slider .icon-back {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--join-us);
   cursor: pointer;
+}
+
+.slant-3-slider .icon-next:hover, .slant-3-slider .icon-back:hover {
+  background: green;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 .slant-3-slider .items {
@@ -109,6 +120,12 @@
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .slant-3-slider .icon-next, .slant-3-slider .icon-back {
+    cursor: default;
+  }
 }
 
 @media (max-width: 767px) {
