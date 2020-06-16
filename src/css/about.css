@@ -282,6 +282,9 @@
   .about-us .about-us-inner .about-text a .seeus {
     margin: 0 auto;
   }
+  .about-us .about-us-inner .about-text .icons {
+    display: none;
+  }
   .team {
     width: 80%;
   }

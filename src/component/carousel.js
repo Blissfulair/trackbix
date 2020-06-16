@@ -46,12 +46,13 @@ class Carousel extends Component{
         let next = n+1;
         prev = count === 0? cont-1:prev
         next = count < cont-1 && next < cont? next:0
-        countDom[prev].style.opacity = '0';
         countDom[next].style.opacity = '0';
-        countDom[prev].style.transform=`translateX(${100}%)`
+        countDom[next].style.transform=`translateX(${-100}%)`
         countDom[n].style.opacity='1'
         countDom[n].style.transform=`translateX(${0}%)`
-        countDom[next].style.transform=`translateX(${-100}%)`
+        countDom[prev].style.opacity = '0';
+        countDom[prev].style.transform=`translateX(${100}%)`
+
 
     }
 

@@ -24,7 +24,7 @@ class Support extends Component{
         this.setState({FAQ:faqs})
     }
     componentWillUnmount(){
-        this.setState({FAQ:[]})
+       
     }
     onSearch = (e)=>{
         const value = e.target.value;
