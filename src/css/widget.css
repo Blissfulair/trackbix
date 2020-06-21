@@ -46,3 +46,10 @@
   height: 5px;
   background: var(--footer-line);
 }
+
+@media (max-width: 767px) {
+  .widget h4 {
+    font-size: 0.68rem;
+    margin-bottom: 17px;
+  }
+}

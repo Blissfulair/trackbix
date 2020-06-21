@@ -144,12 +144,29 @@
         &::after{
             height: 40%;
         }
+        .scroll{
+            position: relative;
+            width: 100%;
+            overflow: scroll;
+            height: 94vh;
+            margin-bottom: 150px;
+        }
         .pricing-inner{
-            display: block;
+            display: flex;
             margin-bottom: 40px;
             .col{
                 margin-bottom: 30px;
                 height: 350px;
+                position: absolute;
+                width: 65%;
+                top: 140px;
+                left: 0;
+                &:nth-child(2){
+                    transform: translateX(110%);
+                }
+                &:last-child{
+                    transform: translateX(220%);
+                }
                 ul{
                     li{
                         font-size: 0.56rem;

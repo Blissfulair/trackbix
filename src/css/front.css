@@ -30,7 +30,7 @@
 
 .home {
   width: 100%;
-  height: 108vh;
+  min-height: 108vh;
   position: relative;
 }
 
@@ -105,10 +105,12 @@
 }
 
 @media (max-width: 767px) {
+  .home {
+    min-height: 100vh;
+  }
   .home::before {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
-    background: transparent linear-gradient(5deg, #28C2FF 0%, #142757 100%);
+    background: url(../images/home.svg) no-repeat right bottom/cover;
+    height: 64%;
   }
   .home .home-inner {
     display: block;
@@ -116,7 +118,19 @@
     padding-top: 150px;
   }
   .home .home-inner .home-image {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .home-inner .home-image img {
+    margin-top: 100px;
+    width: 174px;
+    height: 346px;
+    -webkit-box-shadow: 31px 8px 23px var(--shadow);
+            box-shadow: 31px 8px 23px var(--shadow);
   }
 }
 

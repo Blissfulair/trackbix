@@ -16,32 +16,34 @@ const Feature =()=>{
     return(
         <>
         <div className="pricing">
-            <div className="pricing-inner">
-                {
-                    packages.map((pack,i)=>{
-                        return (
-                            <div key={i} className="col">
-                            <h5>{pack.package}</h5>
-                            <p>
-                                <sup>$</sup>
-                                <span>{pack.price}</span>
-                                <sub>/ month</sub>
-                            </p>
-                            <div className="badge">
-                                <small>{pack.user > 1? `${pack.user} users`: `${pack.user} user`}</small>
+            <div className="scroll">
+                <div className="pricing-inner">
+                    {
+                        packages.map((pack,i)=>{
+                            return (
+                                <div key={i} className="col">
+                                <h5>{pack.package}</h5>
+                                <p>
+                                    <sup>$</sup>
+                                    <span>{pack.price}</span>
+                                    <sub>/ month</sub>
+                                </p>
+                                <div className="badge">
+                                    <small>{pack.user > 1? `${pack.user} users`: `${pack.user} user`}</small>
+                                </div>
+                                <ul>
+                                    {
+                                        pack.content.map((content,j)=>{
+                                            return <li key={j}>{content.list}</li>
+                                        })
+                                    }
+                                </ul>
+                                <Link to="/">Subscribe</Link>
                             </div>
-                            <ul>
-                                {
-                                    pack.content.map((content,j)=>{
-                                        return <li key={j}>{content.list}</li>
-                                    })
-                                }
-                            </ul>
-                            <Link to="/">Subscribe</Link>
-                        </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
         </>

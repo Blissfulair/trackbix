@@ -197,13 +197,34 @@
   .pricing::after {
     height: 40%;
   }
+  .pricing .scroll {
+    position: relative;
+    width: 100%;
+    overflow: scroll;
+    height: 94vh;
+    margin-bottom: 150px;
+  }
   .pricing .pricing-inner {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 40px;
   }
   .pricing .pricing-inner .col {
     margin-bottom: 30px;
     height: 350px;
+    position: absolute;
+    width: 65%;
+    top: 140px;
+    left: 0;
+  }
+  .pricing .pricing-inner .col:nth-child(2) {
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
+  }
+  .pricing .pricing-inner .col:last-child {
+    -webkit-transform: translateX(220%);
+            transform: translateX(220%);
   }
   .pricing .pricing-inner .col ul li {
     font-size: 0.56rem;

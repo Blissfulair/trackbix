@@ -113,7 +113,7 @@ const About =()=>{
                 <div className="slant-3-inner">
                     <h3>Client Review</h3>
                     <Carousel arrows auto={5000}>
-                        <div className="item">
+                        <div className="item active">
                             <div className="item-image">
                                 <img src={iyobosa} alt="" />
                             </div>

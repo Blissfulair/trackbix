@@ -36,6 +36,7 @@ footer{
                 }
             }
             &:last-child{
+
                 .sub{
                     h5{
                         margin-bottom: 10px;
@@ -58,7 +59,6 @@ footer{
                     font-size: 0.78rem;
                 }
                 .social-media{
-                    height: 35px;
                     display: grid;
                     grid-template-columns: 15% 15% 15%;
                     grid-column-gap: 7%;
@@ -90,30 +90,53 @@ footer{
 @media (max-width:767px){
     footer{
         height: auto;
+        padding-top: 40px;
         svg{
-            display: none;
+            path{
+                transform: translate(0, 19%)
+            }
         }
         &::after{
-            top: 0;
+            bottom: 0;
             left: 0;
             position: absolute;
             content: "";
-            height: 100%;
+            height: 70%;
             width: 100%;
             z-index: -1;
             background: $footer-blue;
 
         }
         .footer-inner{
-            grid-template-columns: 60% 40%;
+            grid-template-columns: 38% 19% 19% 19%;
             justify-content: center;
             width: 90%;
-            grid-row-gap: 20px;
+            grid-row-gap: 10px;
             .footer-col{
+                li{
+                    margin: -4px 0;
+                    a{
+                        font-size: 0.58rem
+                    }
+                }
+                &:first-child{
+                    h4{
+                        font-size: 1rem
+                    }
+                    p{
+                        font-size: 0.68rem;
+                    }
+                    .social-media{
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
                 &:last-child{
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-                    margin-bottom: 30px;
+                    position: absolute;
+                    top: -200px;
+                    left: 50%;
+                   transform: translateX(-50%);
                         .sub{
                             h5{
                                 text-align: center;

@@ -1,13 +1,15 @@
 @import "variables";
 .container{
     height: 600px;
-    display: flex;
+     display: flex;
+    // flex: 3;
     overflow: hidden;
     align-items: center;
     width: 100%;
     padding-top: 70px;
     position: relative;
     .item{
+        width: calc(100%/3);
         position: absolute !important;
         transition: all 0.9s ease-in-out;
         transform: translateX(-100%);
@@ -19,7 +21,7 @@
             transform: translateX(0);
           }
           &:nth-child(2){
-            transform: translateX(189px) scale(1.2);
+            transform: translateX(75%) scale(1.2);
             border: 5px solid #E9EDF7;
             padding: 30px 10px;
             margin-top: -5px;
@@ -30,13 +32,13 @@
             // }
           }
           &:nth-child(1){
-            transform: translateX(410px);
+            transform: translateX(200%);
           }
     }
  
     img{
         height: 400px;
-        width: 189px;
+        width: 100%;
     }
     .active{
         transform: scale(1.2);
@@ -49,6 +51,10 @@
 }
 @media(max-width:767px){
     .container{
-        padding-top: 0;
+        padding-top: 20px;
+        height: 360px;
+        img{
+          height: 220px;
+        }
     }
 }

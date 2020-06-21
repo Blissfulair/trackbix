@@ -30,6 +30,10 @@
   src: url("./fonts/Montserrat-Black.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Montserrat-Light";
+  src: url("./fonts/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
   font-family: "Boli";
   src: url("./fonts/mv.ttf") format("truetype");
 }

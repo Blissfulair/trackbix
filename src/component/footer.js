@@ -27,19 +27,19 @@ const Footer =()=>{
                     <p>All rights reserved &copy; TrackBiz {new Date().getFullYear()}</p>
                 </div>
                 <div className="footer-col">
-                    <Widget title="Plartform">
+                    <Widget title="Platform">
                         <ul>
                             <li>
-                                <Link to="/features">How to</Link>
+                                <Link to="/">How to</Link>
                             </li>
                             <li>
-                                <Link to="/features">Pricing</Link>
+                                <Link to="/">Pricing</Link>
                             </li>
                             <li>
-                                <Link to="/features">Accounts</Link>
+                                <Link to="/">Accounts</Link>
                             </li>
                             <li>
-                                <Link to="/features">Developers</Link>
+                                <Link to="/">Developers</Link>
                             </li>
                         </ul>
                     </Widget>
@@ -48,16 +48,16 @@ const Footer =()=>{
                     <Widget title="Company">
                         <ul>
                             <li>
-                                <Link to="/features">Terms</Link>
+                                <Link to="/">Terms</Link>
                             </li>
                             <li>
-                                <Link to="/features">Privacy</Link>
+                                <Link to="/">Privacy</Link>
                             </li>
                             <li>
                                 <Link to="/about us">About us</Link>
                             </li>
                             <li>
-                                <Link to="/features">Contact us</Link>
+                                <Link to="/">Contact us</Link>
                             </li>
                         </ul>
                     </Widget>
@@ -66,16 +66,16 @@ const Footer =()=>{
                     <Widget title="Resources">
                         <ul>
                             <li>
-                                <Link to="/features">Support</Link>
+                                <Link to="/">Support</Link>
                             </li>
                             <li>
-                                <Link to="/features">Updates</Link>
+                                <Link to="/">Updates</Link>
                             </li>
                             <li>
-                                <Link to="/features">Newsletter</Link>
+                                <Link to="/">Newsletter</Link>
                             </li>
                             <li>
-                                <Link to="/features">Developer</Link>
+                                <Link to="/">Developer</Link>
                             </li>
                         </ul>
                     </Widget>

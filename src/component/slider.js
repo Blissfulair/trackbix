@@ -16,7 +16,7 @@ class Slider extends Component{
         const time =     setInterval(()=>{
                 this.slider(this.state.count)
                 this.setState({count:this.state.count+1})
-            },5000)
+            },7000)
             this.setState({time:time})
             
     }
@@ -59,10 +59,10 @@ class Slider extends Component{
         items[first].style.opacity=`1` 
         items[second].style.opacity=`1` 
         items[first].style.transform=`translateX(${0}px)`
-        items[second].style.transform=`translateX(${189}px) scale(1.2)`
+        items[second].style.transform=`translateX(${75}%) scale(1.2)`
         items[second].style.padding = "30px 10px";
         items[second].style.border=`5px solid #E9EDF7`;
-        items[third].style.transform=`translateX(${410}px)`
+        items[third].style.transform=`translateX(${200}%)`
         if(items[next]){
             
             items[next].style.opacity=`0` 

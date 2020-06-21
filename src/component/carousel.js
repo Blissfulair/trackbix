@@ -19,18 +19,19 @@ class Carousel extends Component{
     }
 
     //show slide
-    sliderShow = (n) =>{
+    sliderShow = () =>{
         const carousel = document.querySelector('.slant-3-slider')
+        const {count} = this.state
         if(carousel !== null){
             const countDom = carousel.querySelectorAll('.item');
             const cont = countDom.length;
-            let slideIndex = Number(n);
+            let slideIndex = Number(count);
             if(slideIndex < 0)
                 slideIndex = cont -1;
             else if(slideIndex > cont-1)
                 slideIndex = 0
             this.setState({count:slideIndex},()=>{
-                this.changeSlide(slideIndex,countDom)
+                this.changeSlide(countDom)
             })  
         }
     }
@@ -39,19 +40,25 @@ class Carousel extends Component{
     }
 
     //change the image of the slider
-    changeSlide = (n,countDom)=>{
-        const cont = countDom.length;
+    changeSlide = (countDom)=>{
+        const items = countDom;
         const {count} = this.state
-        let prev = n-1;
-        let next = n+1;
-        prev = count === 0? cont-1:prev
-        next = count < cont-1 && next < cont? next:0
-        countDom[next].style.opacity = '0';
-        countDom[next].style.transform=`translateX(${-100}%)`
-        countDom[n].style.opacity='1'
-        countDom[n].style.transform=`translateX(${0}%)`
-        countDom[prev].style.opacity = '0';
-        countDom[prev].style.transform=`translateX(${100}%)`
+        const active = document.querySelector('.slant-3-slider').querySelector('.active');
+        let next = count> 0?count-1:(count=== 0?items.length-1:0) ;
+        let prev = count>= items.length-1?0:count+ 1;
+        const current = items[count];
+        const last = items[next];
+        const newone = items[prev];
+        if(active !== null)
+        active.classList.remove('active')
+        last.style.transform = 'translateX(100%)';
+    
+        current.style.visibility = 'visible';
+        current.style.transform = 'translateX(0)';
+        current.classList.add('active')
+        newone.style.transform = 'translateX(-100%)';
+        newone.style.visibility = 'hidden';
+        last.style.visibility = 'hidden';
 
 
     }
@@ -59,12 +66,15 @@ class Carousel extends Component{
     //if the auto attribute is set
     autoSlide =(speed=0)=>{
         let len = this.props.children !== undefined? this.props.children.length:1
-        let slideIndex = this.state.count +1;
+        let slideIndex = this.state.count;
        let time =  setInterval(()=>{
+        slideIndex++
         if(slideIndex >= len)
          slideIndex = 0;
-           this.sliderShow(slideIndex)
-           slideIndex++
+        if(slideIndex < 0)
+        slideIndex = len -1
+           this.setState({count:slideIndex}, ()=>{this.sliderShow()})
+           
         },speed)
         this.setState({time:time})
     }
@@ -75,13 +85,29 @@ class Carousel extends Component{
     }
 
     prevSlide = ()=>{
-        this.sliderShow(Number(this.state.count - 1))
+        const carousel = document.querySelector('.slant-3-slider')
+        if(carousel !== null){
+        const items = carousel.querySelectorAll('.item')
+        let num = Number(this.state.count-1)
+        if(num<0)
+        num = items.length -1;
+        this.sliderShow()
+        this.setState({count:num})
+        }
     }
 
 
 
     nextSlide = ()=>{
-        this.sliderShow(Number(this.state.count + 1))
+        const carousel = document.querySelector('.slant-3-slider')
+        if(carousel !== null){
+        const items = carousel.querySelectorAll('.item')
+        let num =Number(this.state.count + 1);
+        if(num > items.length -1)
+        num = 0;
+        this.sliderShow()
+        this.setState({count:num})
+        }
     }
 
 
@@ -97,16 +123,20 @@ class Carousel extends Component{
                             <>
                                 <div 
                                 onClick={this.prevSlide} 
-                                onMouseEnter={this.onHover} 
-                                onMouseOut={()=>this.autoSlide(auto)} 
+                                // onMouseEnter={()=>this.onHover()} 
+                                // onMouseLeave={()=>this.autoSlide(auto)} 
+                                onPointerLeave={()=>this.autoSlide(auto)}
+                                onPointerEnter={()=>this.onHover()}  
                                 className="left">
                                     <span className="icon-back"></span>    
                                 </div>
                                 <div className="items">{children}</div>
                                 <div 
                                 onClick={this.nextSlide} 
-                                onMouseEnter={this.onHover} 
-                                onMouseOut={()=>this.autoSlide(auto)} 
+                                onPointerLeave={()=>this.autoSlide(auto)} 
+                                onPointerEnter={()=>this.onHover()} 
+                                // onMouseEnter={()=>this.onHover()} 
+                                // onMouseLeave={()=>this.autoSlide(auto)} 
                                 className="right">
                                     <span className="icon-next"></span>
                                 </div>

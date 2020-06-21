@@ -155,7 +155,7 @@
                 .slide-image{
                     // position: relative !important;
                     height: 400px;
-                    width: 189px;
+                    width: calc(100%/3);
                     z-index: -1;
                     &::after{
                         position: absolute;
@@ -295,44 +295,84 @@
     .about{
         .inner-about{
             .row{
-                display: block;
+                display: none;
             }
         }
         .how-it-works{
+            h3{
+                display: none;
+            }
             .content{
                 display: block;
                 .cal-text{
+                    border: none;
+                    padding: 0;
                     .content-img{
-                        right: 10px;
+                        left: 34px;
                         top: 130px;
+                        right: 0;
                         z-index: -1;
+                        img{
+                            width: 140px;
+                            height: 286px;
+                        }
                     }
                     .inner{
                         p{
-                            font-size: 1.1rem;
+                            font-size:  0.7rem;
                             width: 100%;
                         }
                     }
                 }
                 .hor-grid{
                     margin-top: 100px;
+                    margin-left: 50%;
+                    .hor-row{
+                        grid-template-columns: repeat(8, 9px [col-start]);
+                        grid-column-gap: 9px;
+                        grid-row-gap: 9px;
+                    }
 
                 }
             }
  
         }
         .content-slant{
-            margin-top: -21px;
             padding-top: 296px;
             display: block;
+            height: auto;
+            &::after{
+                clip-path: none;
+                background: none;
+            }
             .col{
+                .ribbon{
+                    display: none;
+                }
+                &:first-child{
+                    position: relative;
+                    margin-top: 40px;
+                    .circle{
+                        width: 170px;
+                        height: 170px;
+                        border-width: 17px;
+                        img{
+                            width: 149px;
+                            margin-top: -54px;
+                            margin-left: 9px;
+                            height: 279px;
+                        }
+                    }
+                }
                 &:last-child{
+                    position: absolute;
+                    top: 100px;
                     justify-content: center;
                     margin-top: 80px;
                     div{
                         p{
                             width:100%;
-                            font-size: 1.1rem;
+                            font-size: 0.78rem;
                         }
                     }
                 }
@@ -340,6 +380,8 @@
         }
         .slant-2{
             display: block;
+            margin-top: 160px;
+            height: 360px;
             .col{
                 &:first-child{
                     margin-left: 0; 
@@ -348,22 +390,53 @@
                         margin: 0 auto;
                         p{
                             width: 100%;
-                            font-size: 1.1rem
+                            font-size: 0.78rem
                         }
                     }
                 }
                 &:last-child{
                     margin-right: 0;
+                    .slide-image{
+                        height: 220px;
+                    }
                 }
             }
         }
         .slant-3{
+            min-height: auto;
+            margin-top: 200px;
+            &::after{
+                clip-path: polygon(0 30%, 100% 40%, 100% 100%, 0% 100%);
+            }
             .slant-3-inner{
-                padding-top: 120px;
+                padding-top: 0;
+                width: 95%;
+                h3{
+                    font-size: 23px;
+                    margin-bottom: 30px;
+                }
+                .item-image{
+                    width: 108px;
+                    height: 108px;
+                }
+                .dot-right{
+                    top: 19%;
+                    right: 8%;
+                    grid-template-columns: repeat(4, 9px [col-start]);
+                    grid-column-gap: 9px;
+                    grid-row-gap: 9px;
+                }
+                .dot-left{
+                    bottom: -105px;
+                    left: 30px;
+                    grid-template-columns: repeat(4, 9px [col-start]);
+                    grid-column-gap: 9px;
+                    grid-row-gap: 9px;
+                }
                 .item-content{
                     margin-top: 15px;
                     p{
-                        font-size: 19px;
+                        font-size: 13px;
                         span#left-q{
                             left: -19px;
                         }
@@ -375,6 +448,7 @@
             }
         }
         .join-us{
+            margin-bottom: 100px;   
             .join-us-inner{
                 width: 93%;
                 .app-store{

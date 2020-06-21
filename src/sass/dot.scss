@@ -4,3 +4,8 @@
     background: $blue-border;
     z-index: 2;
 }
+@media(max-width:767px){
+    .dot{
+        height: 9px;
+    }
+}

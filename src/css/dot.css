@@ -33,3 +33,9 @@
   background: #274DAD;
   z-index: 2;
 }
+
+@media (max-width: 767px) {
+  .dot {
+    height: 9px;
+  }
+}

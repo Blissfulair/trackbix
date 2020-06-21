@@ -160,6 +160,9 @@
     -ms-grid-columns: (47.5% [col-start])[2];
         grid-template-columns: repeat(2, 47.5% [col-start]);
   }
+  .faq {
+    margin-bottom: 250px;
+  }
   .faq .faq-inner {
     width: 80%;
   }

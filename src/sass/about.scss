@@ -209,6 +209,7 @@
     }
     .team{
         width: 80%;
+        margin-bottom: 280px;
         .team-gallery{
             grid-template-columns: repeat(2, 50% [col-start]);
         }
