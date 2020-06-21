@@ -194,6 +194,14 @@
                 display: block;
             }
             .about-text{
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+                h4{
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
                 a{
                     display: flex;
                     justify-content: center;
@@ -210,6 +218,9 @@
     .team{
         width: 80%;
         margin-bottom: 280px;
+        h3{
+            font-size: 23px;
+        }
         .team-gallery{
             grid-template-columns: repeat(2, 50% [col-start]);
         }

@@ -64,6 +64,10 @@
   grid-column-gap: 5%;
 }
 
+.about .app-how {
+  display: none;
+}
+
 .about .how-it-works {
   width: 75%;
   margin: 0 auto;
@@ -397,6 +401,33 @@
   .about .inner-about .row {
     display: none;
   }
+  .about .app-how {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 190px;
+  }
+  .about .app-how h3 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Montserrat-Bold";
+    font-size: 30px;
+    color: var(--title);
+  }
+  .about .app-how .register h3, .about .app-how .subscription h3 {
+    font-size: 19px;
+  }
+  .about .app-how .register p, .about .app-how .subscription p {
+    color: #5687AC;
+    font-size: 0.89rem;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .about .app-how .register img, .about .app-how .subscription img {
+    width: 100%;
+    margin: 20px 0;
+  }
   .about .how-it-works h3 {
     display: none;
   }
@@ -491,7 +522,7 @@
     margin-right: 0;
   }
   .about .slant-2 .col:last-child .slide-image {
-    height: 220px;
+    height: 200px;
   }
   .about .slant-3 {
     min-height: auto;
@@ -535,8 +566,11 @@
   .about .slant-3 .slant-3-inner .item-content p {
     font-size: 13px;
   }
+  .about .slant-3 .slant-3-inner .item-content p span {
+    font-size: 80px;
+  }
   .about .slant-3 .slant-3-inner .item-content p span#left-q {
-    left: -19px;
+    left: -10px;
   }
   .about .slant-3 .slant-3-inner .item-content p span#right-q {
     bottom: -100px;

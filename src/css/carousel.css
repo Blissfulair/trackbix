@@ -68,7 +68,7 @@
 
 .slant-3-slider .icon-next, .slant-3-slider .icon-back {
   font-size: 1.3rem;
-  color: var(--join-us);
+  color: var(--light-text);
   cursor: pointer;
 }
 
@@ -102,8 +102,8 @@
       -ms-flex-align: center;
           align-items: center;
   visibility: hidden;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -138,5 +138,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .slant-3-slider .icon-next, .slant-3-slider .icon-back {
+    font-size: 1rem;
   }
 }

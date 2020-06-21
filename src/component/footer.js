@@ -3,7 +3,7 @@ import "./../css/footer.css"
 import {Link } from "react-router-dom";
 import Widget from "./footerWidget";
 import Subscribe from "./subscribe";
-const Footer =()=>{
+const Footer =({title})=>{
     return(
         <footer>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 260">
@@ -11,7 +11,7 @@ const Footer =()=>{
             </svg>
             <div className="footer-inner">
                 <div className="footer-col">
-                    <h4>Trackbiz</h4>
+                    <h4>{title}</h4>
                     <p>Your business within your control</p>
                     <div className="social-media">
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

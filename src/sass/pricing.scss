@@ -144,12 +144,13 @@
         &::after{
             height: 40%;
         }
+        margin-bottom: 150px;
         .scroll{
             position: relative;
             width: 100%;
+            // margin-left: 21%;
             overflow: scroll;
-            height: 94vh;
-            margin-bottom: 150px;
+            height: 94vh
         }
         .pricing-inner{
             display: flex;
@@ -158,14 +159,17 @@
                 margin-bottom: 30px;
                 height: 350px;
                 position: absolute;
-                width: 65%;
+                width: 61%;
                 top: 140px;
                 left: 0;
+                &:first-child{
+                    transform: translateX(30%);
+                }
                 &:nth-child(2){
-                    transform: translateX(110%);
+                    transform: translateX(150%);
                 }
                 &:last-child{
-                    transform: translateX(220%);
+                    transform: translateX(270%);
                 }
                 ul{
                     li{

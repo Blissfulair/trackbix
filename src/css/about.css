@@ -271,6 +271,14 @@
   .about-us .about-us-inner .about-us-content {
     display: block;
   }
+  .about-us .about-us-inner .about-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .about-us .about-us-inner .about-text h4 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
   .about-us .about-us-inner .about-text a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,6 +296,9 @@
   .team {
     width: 80%;
     margin-bottom: 280px;
+  }
+  .team h3 {
+    font-size: 23px;
   }
   .team .team-gallery {
     -ms-grid-columns: (50% [col-start])[2];

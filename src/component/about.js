@@ -14,6 +14,7 @@ import iyobosa from "./../images/about.png"
 import slider from "./../images/slider.png"
 import slider1 from "./../images/slider1.png"
 import slider2 from "./../images/slider2.png"
+import subscription from "./../images/subscription.png"
 const About =()=>{
     return(
         <div className="about">
@@ -102,10 +103,29 @@ const About =()=>{
                 <div className="col">
                     <Slider>
                         <div className="slide-image item"><img src={calendar} alt="" /></div>
-                        <div className="item active" ><img src={phone} alt="" /></div>
+                        <div className="item actives" ><img src={phone} alt="" /></div>
                         <div className="slide-image item"><img src={calendar} alt="" /></div>
                         <div className="slide-image item"><img src={calendar} alt="" /></div>
                     </Slider>
+                </div>
+            </div>
+
+            <div className="app-how">
+                <h3>How it works</h3>
+                <div className="register">
+                    <h3>Register</h3>
+                    <p>Download and install the application from play store or app store. Register and setup you user account.</p>
+                    <div>
+                        <img src={subscription} alt="" />
+                    </div>
+                </div>
+                <div className="subscription">
+                    <h3>Select subscription method</h3>
+                    <p>Select a subscription package that best fits your prestige and business scale. Setup your business account, customize your messages and receipts.</p>
+                    <div>
+                        <img src={subscription} alt="" />
+                    </div>
+                    <p>Enjoy our unlimited service of keeping you in track with your records.</p>
                 </div>
             </div>
 

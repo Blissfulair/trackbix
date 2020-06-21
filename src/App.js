@@ -15,10 +15,11 @@ import About from './pages/about';
 
 
 function App() {
+  const title = "TrackBiz"
   return (
     <div className="App">
       <Router>
-        <Header title="Trackbiz"/>
+        <Header title={title}/>
         <Switch>
           <Route path="/features">
             <Feature/>
@@ -34,7 +35,7 @@ function App() {
           </Route>
 
         </Switch>
-        <Footer/>
+        <Footer title={title}/>
       </Router>
     </div>
   );

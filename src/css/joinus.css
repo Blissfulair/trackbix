@@ -34,3 +34,9 @@
   font-size: 23px;
   color: var(--join-us);
 }
+
+@media (max-width: 767px) {
+  .joinus h4 {
+    font-size: 16px;
+  }
+}

@@ -27,9 +27,9 @@ class Slider extends Component{
         const slide = document.querySelector('#side-carousel');
        if(slide !== null){
         const items = slide.querySelectorAll('.item')
-        const active = slide.querySelector('.active')
+        const active = slide.querySelector('.actives')
         if(active !== null){
-            active.classList.remove('active');
+            active.classList.remove('actives');
         }
 
         if(n > items.length -1)
@@ -49,19 +49,13 @@ class Slider extends Component{
                 },1000)
         }
         items[second].classList.remove('slide-image')
+        items[second].classList.add('actives')
         items[first].classList.add('slide-image')
         items[third].classList.add('slide-image')
-        items[first].style.border=`none`;
-        items[third].style.border=`none`;
-        items[first].style.padding = "0";
-        items[third].style.padding = "0";
         items[third].style.opacity=`1` 
         items[first].style.opacity=`1` 
         items[second].style.opacity=`1` 
         items[first].style.transform=`translateX(${0}px)`
-        items[second].style.transform=`translateX(${75}%) scale(1.2)`
-        items[second].style.padding = "30px 10px";
-        items[second].style.border=`5px solid #E9EDF7`;
         items[third].style.transform=`translateX(${200}%)`
         if(items[next]){
             
