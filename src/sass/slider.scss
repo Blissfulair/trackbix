@@ -36,6 +36,13 @@
       margin-top: -5px;
     }
 }
+@media(max-width:986px){
+  .container{
+    img{
+      height: 200px;
+    }
+}
+}
 @media(max-width:767px){
     .container{
         padding-top: 20px;

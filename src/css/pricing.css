@@ -195,7 +195,7 @@
 
 @media (max-width: 767px) {
   .pricing {
-    margin-bottom: 150px;
+    min-height: 127vh;
   }
   .pricing::after {
     height: 40%;
@@ -203,8 +203,8 @@
   .pricing .scroll {
     position: relative;
     width: 100%;
-    overflow: scroll;
-    height: 94vh;
+    overflow-x: scroll;
+    height: 81vh;
   }
   .pricing .pricing-inner {
     display: -webkit-box;

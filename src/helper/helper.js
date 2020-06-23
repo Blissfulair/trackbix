@@ -24,7 +24,7 @@ export const openMobileMenu = (event,isOpen)=>{
 }
 
 export const closeMobileMenu =(event,isOpen)=>{
-    if( event.target.parentElement.className ==='menu-item' || event.target.className ==='menu-item' || event.target.className ==='menu-items' || event.target.className ==='theme-button'){
+    if( event.target.className.includes('tbtn') || event.target.className ==='theme-button'){
         isOpen = true
         document.querySelector('.menu').style.opacity = '1'
         document.querySelector('.menu').style.visibility = 'visible';

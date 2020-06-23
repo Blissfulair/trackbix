@@ -293,13 +293,8 @@
         }
     }
 }
-@media(max-width:767px){
+@media(max-width:986px){
     .about{
-        .inner-about{
-            .row{
-                display: none;
-            }
-        }
         .app-how{
             display: block;
             width: 80%;
@@ -329,6 +324,24 @@
                 }
             }
 
+        }
+        .slant-2{
+            .col{
+                &:last-child{
+                    .slide-image{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .about{
+        .inner-about{
+            .row{
+                display: none;
+            }
         }
         .how-it-works{
             h3{

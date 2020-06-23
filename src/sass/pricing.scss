@@ -144,13 +144,13 @@
         &::after{
             height: 40%;
         }
-        margin-bottom: 150px;
+        min-height: 127vh;
         .scroll{
             position: relative;
             width: 100%;
             // margin-left: 21%;
-            overflow: scroll;
-            height: 94vh
+            overflow-x: scroll;
+            height: 81vh
         }
         .pricing-inner{
             display: flex;

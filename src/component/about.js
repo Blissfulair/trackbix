@@ -19,32 +19,30 @@ const About =()=>{
     return(
         <div className="about">
             <div className="inner-about">
-                <h3>About the app</h3>
+                <h3>How it works</h3>
                 <div className="row">
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Register"
+                    body ={`Download and install the application from play store or app store. Register and setup you user account.`}
                     />
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Select Subscription Method"
+                    body ={`Select a subscription package that best fits your prestige and business scale.  Setup your business account, customize your messages and receipts.`}
                     />
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Begin Usage and Enjoy"
+                    body ="Enjoy our unlimited service of keeping you in track with your records."
                     />
                 </div>
             </div>
             <div className="how-it-works">
-                <h3>How it works</h3>
+                <h3>About the app</h3>
                 <div className="content">
                     <div className="cal-text">
                         <div className="inner">
-                            <h5>Calendar</h5>
+                            <h5>{`Product Catalogue`}</h5>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                                Ut wisi enim ad minim veniam,
+                                {`Keep records of products available for sale, in the products catalogue and share with potential customers in a click.`}
                             </p>
                             <div className="content-img">
                                 <img src={phone} alt=""/>
@@ -78,11 +76,9 @@ const About =()=>{
                             </g>
                         </svg>
                         </div>
-                        <h5>Calendar</h5>
+                        <h5>{`Receipts`}</h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                            Ut wisi enim ad minim veniam,
+                            {`Tired of having to post customer reviews? We have you covered with sales receipts showing cost of items, item image and customer details customized to your taste.`}
                         </p>
                     </div>
                 </div>
@@ -91,11 +87,9 @@ const About =()=>{
             <div className="slant-2">
                 <div className="col">
                     <div>
-                        <h5>Calendar</h5>
+                        <h5>{`Service Catalogue`}</h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                            Ut wisi enim ad minim veniam,
+                            {`Setup breakdowns of service costs for customers and share with a click.`}
                         </p>
                         <p>And many more. <Link to="/features">Explore to find out</Link></p>
                     </div>

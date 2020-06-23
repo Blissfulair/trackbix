@@ -66,7 +66,7 @@ const Header = ({title})=>{
                         <li className="menu-item"><Link to="features">Pricing</Link></li>
                         <li className="menu-item"><Link to="support">Support</Link></li>
                         <li className="menu-item">Try for free</li>
-                        <li className="menu-item">
+                        <li className="menu-item tbtn">
                             <Theme/>
                         </li>
                     </ul>
