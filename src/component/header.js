@@ -61,12 +61,12 @@ const Header = ({title})=>{
                 </div>
                 <div className="menu">
                     <ul className="menu-items">
-                        <li className="menu-item">Download app</li>
-                        <li className="menu-item">Features</li>
+                        <li className="menu-item">Download</li>
+                        <li className="menu-item"><Link to="/#about">About the App</Link></li>
                         <li className="menu-item"><Link to="features">Pricing</Link></li>
                         <li className="menu-item"><Link to="support">Support</Link></li>
                         <li className="menu-item">Try for free</li>
-                        <li className="menu-item">
+                        <li className="menu-item tbtn">
                             <Theme/>
                         </li>
                     </ul>

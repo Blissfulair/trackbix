@@ -1,8 +1,9 @@
 @import "variables";
 .card{
-    height: 250px;
+    min-height: 250px;
     box-shadow: 0px 3px 13px $shadow;
     background: $white;
+    padding-bottom: 20px; 
     position: relative;
     .icon{
         position: absolute;
@@ -62,13 +63,16 @@
 }
 @media(max-width:767px){
     .card{
-        height: 210px;
+        min-height: 200px;
         .card-inner{
+            margin-top: 39px;
             h4{
-                padding-top: 37px;
+                padding-top: 0px;
+                 margin-bottom: 8px;
+                 font-size: 0.9rem;
             }
             p{
-                font-size: 1.1rem;
+                font-size: 0.7rem;
                 font-weight: 500;
             }
         }

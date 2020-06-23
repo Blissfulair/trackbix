@@ -45,7 +45,6 @@
 }
 
 .subscribe input, .subscribe button {
-  height: 100%;
   background: transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -56,15 +55,19 @@
 }
 
 .subscribe button {
-  border-radius: 0 30px 30px 0;
+  border-radius: 30px;
   background: transparent -webkit-gradient(linear, right top, left top, from(#28C2FF), to(#142757));
   background: transparent linear-gradient(270deg, #28C2FF 0%, #142757 100%);
   font-size: 0.78rem;
   color: #fff;
   font-family: "Montserrat-Medium";
+  height: 90%;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .subscribe input {
+  height: 100%;
   padding: 0 40px;
   border-radius: 30px 0 0 30px;
   color: #160C28;
@@ -100,12 +103,15 @@
             flex-direction: column;
     -webkit-box-shadow: none;
             box-shadow: none;
+    width: 70%;
+    margin: 20px auto;
   }
   .subscribe input, .subscribe button {
     border-radius: 30px 30px 30px 30px;
   }
   .subscribe input {
     height: 40px;
+    width: 100%;
     background: #fff;
     -webkit-box-shadow: 0px 3px 6px #00000029;
             box-shadow: 0px 3px 6px #00000029;
@@ -138,5 +144,6 @@
   .subscribe button {
     height: 30px;
     padding: 0 20px;
+    width: 40%;
   }
 }

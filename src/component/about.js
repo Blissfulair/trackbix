@@ -14,37 +14,34 @@ import iyobosa from "./../images/about.png"
 import slider from "./../images/slider.png"
 import slider1 from "./../images/slider1.png"
 import slider2 from "./../images/slider2.png"
-import subscription from "./../images/subscription.png"
 const About =()=>{
     return(
         <div className="about">
             <div className="inner-about">
-                <h3>About the app</h3>
+                <h3>How it works</h3>
                 <div className="row">
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Register"
+                    body ={`Download and install the application from play store or app store. Register and setup you user account.`}
                     />
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Select Subscription Method"
+                    body ={`Select a subscription package that best fits your prestige and business scale.  Setup your business account, customize your messages and receipts.`}
                     />
                     <Card 
-                    title="Keep track of your budget"
-                    body ="Trackbiz allow you keep track of your monthly spending"
+                    title="Begin Usage and Enjoy"
+                    body ="Enjoy our unlimited service of keeping you in track with your records."
                     />
                 </div>
             </div>
-            <div className="how-it-works">
-                <h3>How it works</h3>
-                <div className="content">
+            <div id="about" className="how-it-works">
+                <h3>About the app</h3>
+                <div className="content about-row">
                     <div className="cal-text">
                         <div className="inner">
-                            <h5>Calendar</h5>
+                            <h5>{`Product Catalogue`}</h5>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                                Ut wisi enim ad minim veniam,
+                                {`Keep records of products available for sale, in the products catalogue and share with potential customers in a click.`}
                             </p>
                             <div className="content-img">
                                 <img src={phone} alt=""/>
@@ -78,11 +75,9 @@ const About =()=>{
                             </g>
                         </svg>
                         </div>
-                        <h5>Calendar</h5>
+                        <h5>{`Receipts`}</h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                            Ut wisi enim ad minim veniam,
+                            {`Tired of having to post customer reviews? We have you covered with sales receipts showing cost of items, item image and customer details customized to your taste.`}
                         </p>
                     </div>
                 </div>
@@ -91,41 +86,49 @@ const About =()=>{
             <div className="slant-2">
                 <div className="col">
                     <div>
-                        <h5>Calendar</h5>
+                        <h5>{`Service Catalogue`}</h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                            Ut wisi enim ad minim veniam,
+                            {`Setup breakdowns of service costs for customers and share with a click.`}
                         </p>
                         <p>And many more. <Link to="/features">Explore to find out</Link></p>
                     </div>
                 </div>
                 <div className="col">
                     <Slider>
-                        <div className="slide-image item"><img src={calendar} alt="" /></div>
-                        <div className="item actives" ><img src={phone} alt="" /></div>
-                        <div className="slide-image item"><img src={calendar} alt="" /></div>
-                        <div className="slide-image item"><img src={calendar} alt="" /></div>
+                        <div className="item actives" ><img src={calendar} alt="" /></div>
                     </Slider>
                 </div>
             </div>
 
-            <div className="app-how">
-                <h3>How it works</h3>
-                <div className="register">
-                    <h3>Register</h3>
-                    <p>Download and install the application from play store or app store. Register and setup you user account.</p>
-                    <div>
-                        <img src={subscription} alt="" />
+            <div className="about-row">
+                <div className="provider">
+                    <div className="col">
+                        <img src={phone} alt=""/>
+                    </div>
+                    <div className="col">
+                        <h5>{`Busy Service Provider?`}</h5>
+                        <p>{`We got your back, Setup and check your schedule in few clicks, stay organized and up to date.`}</p>
                     </div>
                 </div>
-                <div className="subscription">
-                    <h3>Select subscription method</h3>
-                    <p>Select a subscription package that best fits your prestige and business scale. Setup your business account, customize your messages and receipts.</p>
-                    <div>
-                        <img src={subscription} alt="" />
+
+                <div className="owner">
+                    <div className="col">
+                        <h5>{`Busy Business Owner?`}</h5>
+                        <p>{`You can now watch your business progress from whatever you are, home or abroad.`}</p>
                     </div>
-                    <p>Enjoy our unlimited service of keeping you in track with your records.</p>
+                    <div className="col">
+                        <img src={phone} alt="" />
+                    </div>
+                </div>
+
+                <div className="customers">
+                    <div className="col">
+                    <img src={phone} alt="" />
+                    </div>
+                    <div className="col">
+                        <h5>{`Not Keeping Customers?`}</h5>
+                        <p>{`Let us help you maintain your customer base by sending thank you see you soon notes to your customers.`}</p>
+                    </div>
                 </div>
             </div>
 

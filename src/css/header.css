@@ -218,3 +218,12 @@ header .menu .menu-items .menu-item:nth-child(5) {
     border-radius: 4px;
   }
 }
+
+@media (max-width: 767px) {
+  header .brown h5 {
+    color: #fff;
+  }
+  header .blue h5 {
+    color: #fff;
+  }
+}

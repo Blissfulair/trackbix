@@ -25,7 +25,7 @@ class Subscribe extends Component{
     render(){
         return(
             <form onSubmit={e=>this.onSubscribe(e)} className="subscribe">
-                <input type="text" name="email" onChange={this.email} placeholder="Email address" />
+                <input type="text" name="email" onChange={this.email} placeholder="Enter your email address" />
                 <button>Subscribe</button>
             </form>
         )

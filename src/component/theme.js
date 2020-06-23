@@ -23,7 +23,7 @@ class Theme extends Component{
              'tab-body':'#FFFFFF',
              'about-title':'#174F7F',
              'see':'#707070',
-             'footer-line':'#FFFFFF',
+             'footer-line':'#E9EDF7',
              'footer-bg':'#8FB7C1',
              'theme':'#FFFFFF',
              'knob':'#133260',

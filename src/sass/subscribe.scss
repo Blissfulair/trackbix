@@ -9,20 +9,23 @@
     align-items: center;
     box-shadow: 0px 3px 6px $shadow;
     input,button{
-        height: 100%;
         background: transparent;
         user-select: none;
         outline: 0;
         border: none;
     }
     button{
-        border-radius: 0 30px 30px 0;
+        border-radius: 30px;
         background:  transparent linear-gradient(270deg, $light-blue 0%, $dark-blue 100%);
         font-size: 0.78rem;
         color:$white;
         font-family: $montserrat-medium;
+        height: 90%;
+        width: 95%;
+        margin: 0 auto;
     }
     input{
+        height: 100%;
         padding: 0 40px;
         border-radius: 30px 0 0 30px;
         color: $title-dark;
@@ -40,11 +43,14 @@
         display: flex;
         flex-direction: column;
         box-shadow: none;
+        width: 70%;
+        margin: 20px auto;
         input,button{
             border-radius: 30px 30px 30px 30px;
         }
         input{
             height: 40px;
+            width: 100%;
             background:$white;
             box-shadow: 0px 3px 6px $shadow;
             margin-bottom: 20px;
@@ -58,6 +64,7 @@
         button{
             height: 30px;
             padding: 0 20px;
+            width: 40%;
         }
     }
 }

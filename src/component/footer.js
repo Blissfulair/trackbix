@@ -6,9 +6,12 @@ import Subscribe from "./subscribe";
 const Footer =({title})=>{
     return(
         <footer>
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 260">
-            <path id="FooterImg" d="M0-174.023S479.431-259.677,959.431-259.677,1920-174.023,1920-174.023V251H0Z"/>
-            </svg>
+            <div className="footer-top">
+                <div className="sub">
+                    <h5>Sign up to our newsletter for updates</h5>
+                    <Subscribe/>
+                </div>
+            </div>
             <div className="footer-inner">
                 <div className="footer-col">
                     <h4>{title}</h4>
@@ -27,7 +30,7 @@ const Footer =({title})=>{
                     <p>All rights reserved &copy; TrackBiz {new Date().getFullYear()}</p>
                 </div>
                 <div className="footer-col">
-                    <Widget title="Platform">
+                    <Widget title="Links">
                         <ul>
                             <li>
                                 <Link to="/">How to</Link>
@@ -81,10 +84,16 @@ const Footer =({title})=>{
                     </Widget>
                 </div>
                 <div className="footer-col">
-                    <div className="sub">
-                        <h5>Sign up to our newsletter for updates</h5>
-                        <Subscribe/>
-                    </div>
+                    <Widget title="Contact">
+                        <ul>
+                            <li>
+                                <Link to="/">admin@trackbiz.com</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Ikeja, Lagos, Nigeria</Link>
+                            </li>
+                        </ul>
+                    </Widget>
                 </div>
             </div>
         </footer>

@@ -50,7 +50,7 @@ $android:var(--android);
 %slant-heading{
     font-family: $montserrat-bold;
     font-size: 1.2rem;
-    color: $light-text;
+    color: #1B4E71;
 }
 %slant-paragraph{
     width: 70%;
@@ -61,6 +61,11 @@ $android:var(--android);
 }
 %transition3{
     transition: all 0.3s linear;
+}
+@media(max-width:767px){
+    %section-title{
+        font-size: 25px;
+    }
 }
 @keyframes arrows{
     0%{

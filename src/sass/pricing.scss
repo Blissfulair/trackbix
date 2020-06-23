@@ -139,18 +139,42 @@
 //         height: 800px;
 //     }
 // }
+@media(width:1024px){
+    .pricing{
+        min-height: 70vh;
+        .pricing-inner{
+            width: 96%;
+        }
+    }
+    }
+@media(width:768px){
+.pricing{
+    min-height: 80vh;
+    .pricing-inner{
+        width: 96%;
+    }
+}
+}
 @media(max-width:767px){
+
     .pricing{
         &::after{
-            height: 40%;
+            clip-path: none;
+            background: url(../images/homemobile.svg) no-repeat center bottom/cover;
+            height: 60%;
         }
-        margin-bottom: 150px;
+        min-height: 127vh;
         .scroll{
             position: relative;
             width: 100%;
             // margin-left: 21%;
-            overflow: scroll;
-            height: 94vh
+            overflow-x: scroll;
+            height: 81vh;
+            overflow-y: hidden;
+            &::-webkit-scrollbar{
+                width: 0px;
+            }
+            scrollbar-width: none;
         }
         .pricing-inner{
             display: flex;
@@ -187,6 +211,28 @@
                         margin-top: -3px !important;
                     }
                 }
+            }
+        }
+    }
+}
+@media(orientation:landscape){
+    .pricing{
+        .pricing-inner{
+            margin-bottom: 50px;
+        }
+    }
+    @media(width: 812px){
+        .pricing{
+            .pricing-inner{
+                width: 96%;
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .pricing{
+            height: 700px;
+            .scroll{
+                height: 700px;
             }
         }
     }

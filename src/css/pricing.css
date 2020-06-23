@@ -193,18 +193,44 @@
           align-items: center;
 }
 
+@media (width: 1024px) {
+  .pricing {
+    min-height: 70vh;
+  }
+  .pricing .pricing-inner {
+    width: 96%;
+  }
+}
+
+@media (width: 768px) {
+  .pricing {
+    min-height: 80vh;
+  }
+  .pricing .pricing-inner {
+    width: 96%;
+  }
+}
+
 @media (max-width: 767px) {
   .pricing {
-    margin-bottom: 150px;
+    min-height: 127vh;
   }
   .pricing::after {
-    height: 40%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: url(../images/homemobile.svg) no-repeat center bottom/cover;
+    height: 60%;
   }
   .pricing .scroll {
     position: relative;
     width: 100%;
-    overflow: scroll;
-    height: 94vh;
+    overflow-x: scroll;
+    height: 81vh;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .pricing .scroll::-webkit-scrollbar {
+    width: 0px;
   }
   .pricing .pricing-inner {
     display: -webkit-box;
@@ -243,5 +269,26 @@
   }
   .pricing .pricing-inner .col:last-child .badge {
     margin-top: -3px !important;
+  }
+}
+
+@media (orientation: landscape) {
+  .pricing .pricing-inner {
+    margin-bottom: 50px;
+  }
+}
+
+@media (orientation: landscape) and (width: 812px) {
+  .pricing .pricing-inner {
+    width: 96%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+  .pricing {
+    height: 700px;
+  }
+  .pricing .scroll {
+    height: 700px;
   }
 }

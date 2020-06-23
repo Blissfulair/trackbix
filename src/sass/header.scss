@@ -78,6 +78,7 @@ header{
 
     header{
         position: initial;
+
         .menu{
             position: absolute;
             top: 0;
@@ -155,6 +156,20 @@ header{
                     border-radius: 4px;
                 }
             }
+        }
+    }
+}
+@media(max-width:767px){
+    header{
+        .brown{
+            h5{
+                color: $white;
+            }
+        }
+        .blue{
+            h5{
+                color: $white;
+            }  
         }
     }
 }

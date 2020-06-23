@@ -21,10 +21,7 @@ const About = ()=>{
                     <h3>About Us</h3>
                     <div className="about-us-content">
                         <div className="image">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+
                         </div>
                         <div className="about-text">
                             <p>We're small team of creatives who teamed up to create a solution to small market enterprises. We understand the important of productivity in business We see the relevance in keeping records updated and in hand.</p>
