@@ -225,7 +225,7 @@
     position: relative;
     width: 100%;
     overflow-x: scroll;
-    height: 81vh;
+    height: 100vh;
     overflow-y: hidden;
     scrollbar-width: none;
   }
