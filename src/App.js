@@ -12,6 +12,7 @@ import Support from './pages/support';
 import Header from './component/header';
 import Footer from './component/footer';
 import About from './pages/about';
+import ScrollToTop from './component/scrolltotop';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <div className="App">
       <Router>
         <Header title={title}/>
-        <Switch>
+          <ScrollToTop>
+          <Switch>
           <Route path="/features">
             <Feature/>
           </Route>
@@ -35,6 +37,7 @@ function App() {
           </Route>
 
         </Switch>
+          </ScrollToTop>
         <Footer title={title}/>
       </Router>
     </div>
