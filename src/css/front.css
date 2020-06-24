@@ -106,11 +106,11 @@
 
 @media (max-width: 767px) {
   .home {
-    min-height: 100vh;
+    min-height: 108vh;
   }
   .home::before {
     background: url(../images/homemobile.svg) no-repeat center bottom/cover;
-    height: 64%;
+    height: 108vh;
   }
   .home .home-inner {
     display: block;
@@ -126,7 +126,7 @@
             justify-content: center;
   }
   .home .home-inner .home-image img {
-    margin-top: 100px;
+    margin-top: 39vh;
     width: 174px;
     height: 346px;
     -webkit-box-shadow: 31px 8px 23px var(--shadow);
@@ -149,6 +149,9 @@
 @media (orientation: landscape) and (max-width: 767px) {
   .home {
     height: 983px;
+  }
+  .home::before {
+    height: 64%;
   }
 }
 

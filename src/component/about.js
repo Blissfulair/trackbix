@@ -5,7 +5,7 @@ import phone from "./../images/phone.png"
 import calendar from "./../images/calendar.png"
 import Dot from "./dot";
 import {Link} from "react-router-dom"
-import Slider from "./slider";
+import PhotoFrame from "./photoframe";
 import Carousel from "./carousel";
 import Apple from "./apple";
 import Android from "./android";
@@ -17,7 +17,7 @@ import slider2 from "./../images/slider2.png"
 const About =()=>{
     return(
         <div className="about">
-            <div className="inner-about">
+            <div id="how" className="inner-about">
                 <h3>How it works</h3>
                 <div className="row">
                     <Card 
@@ -94,9 +94,9 @@ const About =()=>{
                     </div>
                 </div>
                 <div className="col">
-                    <Slider>
-                        <div className="item actives" ><img src={calendar} alt="" /></div>
-                    </Slider>
+                    <PhotoFrame>
+                        <div className="item actives" ><img src={calendar} alt="TrackBiz Front screen" /></div>
+                    </PhotoFrame>
                 </div>
             </div>
 
@@ -117,7 +117,12 @@ const About =()=>{
                         <p>{`You can now watch your business progress from whatever you are, home or abroad.`}</p>
                     </div>
                     <div className="col">
-                        <img src={phone} alt="" />
+                        <img src={phone} alt="TrackBiz back" />
+                        <div className="curve">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 600.346 559.135">
+                            <path id="Path_555" data-name="Path 555" d="M256.234-21.367C371.7-173.2,512.469,93.353,512.469,234.868S397.749,491.1,256.234,491.1,0,376.382,0,234.868,140.773,130.467,256.234-21.367Z" transform="matrix(0.087, -0.996, 0.996, 0.087, 66.448, 516.333)" fill="#41e59e"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
 

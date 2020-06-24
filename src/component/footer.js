@@ -33,16 +33,13 @@ const Footer =({title})=>{
                     <Widget title="Links">
                         <ul>
                             <li>
-                                <Link to="/">How to</Link>
+                                <a href="/#how">How to</a>
                             </li>
                             <li>
-                                <Link to="/">Pricing</Link>
+                                <Link to="/pricing">Pricing</Link>
                             </li>
                             <li>
                                 <Link to="/">Accounts</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Developers</Link>
                             </li>
                         </ul>
                     </Widget>
@@ -59,9 +56,6 @@ const Footer =({title})=>{
                             <li>
                                 <Link to="/about us">About us</Link>
                             </li>
-                            <li>
-                                <Link to="/">Contact us</Link>
-                            </li>
                         </ul>
                     </Widget>
                 </div>
@@ -69,16 +63,13 @@ const Footer =({title})=>{
                     <Widget title="Resources">
                         <ul>
                             <li>
-                                <Link to="/">Support</Link>
+                                <Link to="/support">Support</Link>
                             </li>
                             <li>
                                 <Link to="/">Updates</Link>
                             </li>
                             <li>
                                 <Link to="/">Newsletter</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Developer</Link>
                             </li>
                         </ul>
                     </Widget>
@@ -87,10 +78,10 @@ const Footer =({title})=>{
                     <Widget title="Contact">
                         <ul>
                             <li>
-                                <Link to="/">admin@trackbiz.com</Link>
+                                <a href="mailto:info@trackbiz.com.ng">info@trackbiz.com.ng</a>
                             </li>
                             <li>
-                                <Link to="/">Ikeja, Lagos, Nigeria</Link>
+                                Ikeja, Lagos, Nigeria
                             </li>
                         </ul>
                     </Widget>

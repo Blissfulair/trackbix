@@ -69,7 +69,7 @@
             justify-content: center;
   }
   .container img {
-    height: 300px;
+    height: auto;
   }
   .container .item.actives {
     -webkit-transform: scale(1.2) !important;

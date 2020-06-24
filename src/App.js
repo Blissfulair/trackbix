@@ -7,7 +7,7 @@ import {
 import './App.css';
 import './../src/css/fonts.css'
 import Home from './pages/home';
-import Feature from './pages/feature';
+import Pricing from './pages/pricing';
 import Support from './pages/support';
 import Header from './component/header';
 import Footer from './component/footer';
@@ -23,8 +23,8 @@ function App() {
         <Header title={title}/>
           <ScrollToTop>
           <Switch>
-          <Route path="/features">
-            <Feature/>
+          <Route path="/pricing">
+            <Pricing/>
           </Route>
           <Route path="/support">
             <Support/>

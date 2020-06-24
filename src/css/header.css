@@ -133,7 +133,7 @@ header .menu .menu-items .menu-item:nth-child(5) {
     height: 100vh;
     opacity: 0;
     visibility: hidden;
-    background: rgba(255, 255, 255, 0);
+    background: var(--menu);
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
     display: -webkit-box;

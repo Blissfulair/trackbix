@@ -62,8 +62,8 @@ const Header = ({title})=>{
                 <div className="menu">
                     <ul className="menu-items">
                         <li className="menu-item">Download</li>
-                        <li className="menu-item"><Link to="/#about">About the App</Link></li>
-                        <li className="menu-item"><Link to="features">Pricing</Link></li>
+                        <li className="menu-item"><a href="/#about">About the App</a></li>
+                        <li className="menu-item"><Link to="pricing">Pricing</Link></li>
                         <li className="menu-item"><Link to="support">Support</Link></li>
                         <li className="menu-item">Try for free</li>
                         <li className="menu-item tbtn">

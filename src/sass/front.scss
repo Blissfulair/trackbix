@@ -73,10 +73,10 @@
 // }
 @media(max-width:767px){
     .home{
-        min-height: 100vh;
+        min-height: 108vh;
         &::before{
             background: url(../images/homemobile.svg) no-repeat center bottom/cover;
-            height: 64%;
+            height: 108vh;
         }
         // height: 100vh;
         .home-inner{
@@ -87,7 +87,7 @@
                 display: flex;
                 justify-content: center;
                img{
-                   margin-top: 100px;
+                   margin-top: 39vh;
                    width: 174px;
                    height: 346px;
                    box-shadow: 31px 8px 23px $phone-shadow;
@@ -110,6 +110,9 @@
     @media(max-width:767px){
         .home{
             height:983px;
+            &::before{
+                height: 64%;
+            }
         }
     }
     @media(min-width:1024px) and (max-width:1366px){

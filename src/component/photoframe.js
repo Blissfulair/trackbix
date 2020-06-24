@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./../css/slider.css"
-class Slider extends Component{
+import "./../css/photoframe.css"
+class PhotoFrame extends Component{
     render(){
         return (
             <div id="side-carousel" className="container">
@@ -9,4 +9,4 @@ class Slider extends Component{
         )
     }
 }
-export default Slider;
+export default PhotoFrame;

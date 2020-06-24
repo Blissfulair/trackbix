@@ -51,7 +51,6 @@
                 }
             }
             .hor-grid{
-                z-index: 10;
                 margin-left: 30%;
 
                 .hor-row{
@@ -212,15 +211,18 @@
         .col{
             &:last-child{
                 position: relative;
-                &::after{
-                    position: absolute;
-                    left: -51px;
-                    bottom: -84px;
-                    content: "";
-                    width: 90%;
-                    height: 80%;
-                    z-index: -1;
-                    background: url(../images/owner.svg) no-repeat left bottom/cover;
+
+            }
+            .curve{
+                position: absolute;
+                left: -50px;
+                bottom: -80px;
+                width: 300px;
+                height: 300px;
+                z-index: -1;
+                svg{
+                    width:100%;
+                    height:100%;
                 }
             }
             img{
@@ -445,29 +447,10 @@
         }
     }
 }
-@media(width:1024px){
-    .about{
-        .owner{
-            .col{
-                &:last-child{
-                    &::after{
-                        width: 116%;
-                    }
-                }
-            }
-        }
-    }
-}
 @media(width:768px){
     .about{
-        .owner{
-            .col{
-                &:last-child{
-                    &::after{
-                        width: 155%;
-                    }
-                }
-            }
+        .about-row{
+            width:86%;
         }
     }
 }
@@ -538,7 +521,7 @@
                 }
                 .hor-grid{
                     margin-top: 100px;
-                    margin-left: 50%;
+                    margin-left: 49%;
                     .hor-row{
                         grid-template-columns: repeat(8, 9px [col-start]);
                         grid-column-gap: 9px;
@@ -626,13 +609,9 @@
         .owner{
             display: block;
             .col{
-                &:last-child{
-                    &::after{
-                        left: 0px;
-                        bottom: -80px;
-                        width: 100%;
-                        height: 70%;
-                    }
+                .curve{
+                    position: absolute;
+                    left: 11%;
                 }
             }
         }
@@ -759,17 +738,6 @@
                 }
             }
         }
-        .owner{
-            .col{
-                &:last-child{
-                    &::after{
-                        width: 83%;
-                        height: 62%;
-                        left: 48px;
-                    }
-                }
-            }
-        }
         .customers{
             .col{
                 &:first-child{
@@ -784,15 +752,24 @@
         }
     }
 }
-@media(max-width:320px){
+@media(width:375px){
     .about{
-        .owner{
+        .how-it-works{
+            .content{
+                .hor-grid{
+                    margin-left:47%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:360px){
+    .about{
+         .owner{
             .col{
-                &:last-child{
-                    &::after{
-                        width: 94%;
-                        height: 62%;
-                    }
+                .curve{
+                    position: absolute;
+                    left: 6%;
                 }
             }
         }
@@ -807,21 +784,24 @@
         }
     }
 }
+@media(width:320px){
+    .about{
+        .how-it-works{
+            .content{
+                .hor-grid{
+                    margin-left:47%;
+                }
+            }
+        }
+    }
+}
 @media(orientation:landscape){
     @media(width: 812px){
         .about{
             .inner-about{
                 width: 90%;
             }
-            .owner{
-                .col{
-                    &:last-child{
-                        &::after{
-                            width: 151%;
-                        }
-                    }
-                }
-            }
+
         }
     }
     @media(max-width:767px){
@@ -847,11 +827,9 @@
             }
             .owner{
                 .col{
-                    &:last-child{
-                        &::after{
-                            width: 60%;
-                            left: 136px;
-                        }
+                    .curve{
+                        position: absolute;
+                        left: 25%;
                     }
                 }
             }

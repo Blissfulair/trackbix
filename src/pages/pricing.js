@@ -2,8 +2,8 @@ import React, { useEffect } from "react"
 import {Link} from "react-router-dom";
 import "./../css/pricing.css";
 import { isInViewport } from "../helper/helper";
-import {packages} from "./../data/topics.js"
-const Feature =()=>{
+import {packages} from "../data/topics.js"
+const Pricing =()=>{
     useEffect(()=>{
         const pricing = document.querySelector('.pricing');
         if(pricing !== null && isInViewport(pricing)){
@@ -24,7 +24,7 @@ const Feature =()=>{
                                 <div key={i} className="col">
                                 <h5>{pack.package}</h5>
                                 <p>
-                                    <sup>$</sup>
+                                    <sup>&#8358;</sup>
                                     <span>{pack.price}</span>
                                     <sub>/ month</sub>
                                 </p>
@@ -49,4 +49,4 @@ const Feature =()=>{
         </>
     )
 }
-export default Feature
+export default Pricing

@@ -161,9 +161,9 @@
         &::after{
             clip-path: none;
             background: url(../images/homemobile.svg) no-repeat center bottom/cover;
-            height: 60%;
+            height: 478px;
         }
-        min-height: 127vh;
+        min-height: 60vh;
         .scroll{
             position: relative;
             width: 100%;
@@ -219,6 +219,13 @@
     .pricing{
         .pricing-inner{
             margin-bottom: 50px;
+        }
+    }
+    @media(width: 823px){
+        .pricing{
+            .pricing-inner{
+                width: 96%;
+            }
         }
     }
     @media(width: 812px){

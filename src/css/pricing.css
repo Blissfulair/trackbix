@@ -213,13 +213,13 @@
 
 @media (max-width: 767px) {
   .pricing {
-    min-height: 127vh;
+    min-height: 60vh;
   }
   .pricing::after {
     -webkit-clip-path: none;
             clip-path: none;
     background: url(../images/homemobile.svg) no-repeat center bottom/cover;
-    height: 60%;
+    height: 478px;
   }
   .pricing .scroll {
     position: relative;
@@ -275,6 +275,12 @@
 @media (orientation: landscape) {
   .pricing .pricing-inner {
     margin-bottom: 50px;
+  }
+}
+
+@media (orientation: landscape) and (width: 823px) {
+  .pricing .pricing-inner {
+    width: 96%;
   }
 }
 
